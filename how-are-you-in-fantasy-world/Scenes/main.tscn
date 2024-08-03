@@ -26,7 +26,7 @@ expand_mode = 1
 layout_mode = 0
 offset_right = 296.0
 offset_bottom = 212.0
-text = "GREET_BUTTON"
+text = "Q_10"
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1

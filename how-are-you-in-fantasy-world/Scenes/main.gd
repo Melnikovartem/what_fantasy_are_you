@@ -6,7 +6,7 @@ var list = ["q1","q2","q3","q4"]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print(questions.next_question(""))
+	pass # Replace with function body.
 
 func skip():
 	$Label.text = tr(q2)

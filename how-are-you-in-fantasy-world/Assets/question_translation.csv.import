@@ -7,7 +7,6 @@ uid="uid://qbul0q10ssrp"
 [deps]
 
 files=["res://Assets/question_translation.en.translation"]
-
 source_file="res://Assets/question_translation.csv"
 dest_files=["res://Assets/question_translation.en.translation"]
 
