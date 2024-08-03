@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lhbyy40au3dn"
-path="res://.godot/imported/Elf Background.jpg-bf29a5dfa3d3f8914c0b18a12e19564c.ctex"
+path="res://.godot/imported/Elf_Background.jpg-5a56722348ecedd01df6b0d61499f22b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Backgrounds/Elf Background.jpg"
-dest_files=["res://.godot/imported/Elf Background.jpg-bf29a5dfa3d3f8914c0b18a12e19564c.ctex"]
+source_file="res://Assets/Backgrounds/Elf_Background.jpg"
+dest_files=["res://.godot/imported/Elf_Background.jpg-5a56722348ecedd01df6b0d61499f22b.ctex"]
 
 [params]
 
