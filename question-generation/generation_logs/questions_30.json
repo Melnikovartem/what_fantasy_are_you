@@ -1,0 +1,234 @@
+[
+    [
+        "When faced with a moral dilemma, you usually:",
+        [
+            [
+                "Trust your instincts and follow your heart",
+                1
+            ]
+        ]
+    ],
+    [
+        "When exploring an ancient ruin or mysterious cave, you're most likely to:",
+        [
+            [
+                "Search for hidden treasures and secrets",
+                2
+            ],
+            [
+                "Investigate any strange markings or symbols on the walls",
+                7
+            ],
+            [
+                "Take a moment to appreciate the history and architecture of the place",
+                12
+            ],
+            [
+                "Be cautious and look for potential traps or dangers",
+                17
+            ]
+        ]
+    ],
+    [
+        "What do you think about taking risks and trying new things?",
+        [
+            [
+                "I love taking calculated risks and exploring new opportunities",
+                3
+            ],
+            [
+                "I prefer to stick with what I know and avoid uncertainty",
+                4
+            ],
+            [
+                "I'm cautious, but willing to take a chance if it could lead to something exciting",
+                5
+            ],
+            [
+                "I'd rather play it safe and avoid any risk at all",
+                6
+            ]
+        ]
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Unicorn",
+        []
+    ],
+    [
+        "What do you think about taking risks and trying new things?",
+        [
+            [
+                "I love taking calculated risks and exploring new opportunities",
+                8
+            ],
+            [
+                "I prefer to stick with what I know and avoid uncertainty",
+                9
+            ],
+            [
+                "I'm cautious, but willing to take a chance if it could lead to something exciting",
+                10
+            ],
+            [
+                "I'd rather play it safe and avoid any risk at all",
+                11
+            ]
+        ]
+    ],
+    [
+        "Phoenix",
+        []
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "What do you think about taking risks and trying new things?",
+        [
+            [
+                "I love taking calculated risks and exploring new opportunities",
+                13
+            ],
+            [
+                "I prefer to stick with what I know and avoid uncertainty",
+                14
+            ],
+            [
+                "I'm cautious, but willing to take a chance if it could lead to something exciting",
+                15
+            ],
+            [
+                "I'd rather play it safe and avoid any risk at all",
+                16
+            ]
+        ]
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Fairy",
+        []
+    ],
+    [
+        "Phoenix",
+        []
+    ],
+    [
+        "Nymph",
+        []
+    ],
+    [
+        "What do you think about taking risks and trying new things?",
+        [
+            [
+                "I love taking calculated risks and exploring new opportunities",
+                18
+            ],
+            [
+                "I prefer to stick with what I know and avoid uncertainty",
+                19
+            ],
+            [
+                "I'm cautious, but willing to take a chance if it could lead to something exciting",
+                20
+            ],
+            [
+                "I'd rather play it safe and avoid any risk at all",
+                21
+            ]
+        ]
+    ],
+    [
+        "Phoenix",
+        []
+    ],
+    [
+        "Gnome",
+        []
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "In a group, do you typically take on a leadership role or prefer to follow others?",
+        [
+            [
+                "Take charge and lead by example",
+                23
+            ]
+        ]
+    ],
+    [
+        "How do you approach unfamiliar territories or situations?",
+        [
+            [
+                "Explore cautiously, gathering information and assessing risks",
+                24
+            ],
+            [
+                "Charge in headfirst, relying on your instincts and adaptability",
+                25
+            ],
+            [
+                "Take a step back, observing from a distance before deciding what to do",
+                26
+            ],
+            [
+                "Avoid it altogether, preferring the comfort of familiarity",
+                27
+            ]
+        ]
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Troll",
+        []
+    ],
+    [
+        "How do you approach unfamiliar territories or situations?",
+        []
+    ],
+    [
+        "Elf",
+        []
+    ]
+]

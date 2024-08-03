@@ -13,10 +13,6 @@
             [
                 "Seek guidance from others or rely on tradition",
                 43
-            ],
-            [
-                "Act on impulse and take risks to achieve a greater goal",
-                64
             ]
         ]
     ],
@@ -537,14 +533,6 @@
             [
                 "Having someone's genuine trust and loyalty",
                 70
-            ],
-            [
-                "Sharing moments of joy and laughter together",
-                75
-            ],
-            [
-                "Finding someone who understands me deeply",
-                80
             ]
         ]
     ],
@@ -636,10 +624,6 @@
             [
                 "A deeper understanding of the situation's underlying principles",
                 78
-            ],
-            [
-                "Your emotional response and gut feelings",
-                79
             ]
         ]
     ],
@@ -657,43 +641,6 @@
     ],
     [
         "Phoenix",
-        []
-    ],
-    [
-        "In a time of great crisis, what do you rely on most to get through it?",
-        [
-            [
-                "My own strength and determination",
-                81
-            ],
-            [
-                "The support and guidance of others",
-                82
-            ],
-            [
-                "A higher power or mystical forces",
-                83
-            ],
-            [
-                "My cunning and adaptability",
-                84
-            ]
-        ]
-    ],
-    [
-        "Centaur",
-        []
-    ],
-    [
-        "Centaur",
-        []
-    ],
-    [
-        "Phoenix",
-        []
-    ],
-    [
-        "Fairy",
         []
     ]
 ]

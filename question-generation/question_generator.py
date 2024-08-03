@@ -1,6 +1,6 @@
 import json
+import random
 import re
-from copy import deepcopy
 
 import ollama
 import prompts
@@ -17,9 +17,10 @@ except ollama._types.ResponseError:
     )
 
 all_questions_answers = []
-max_depth = 1
+max_depth = 3
+duplicate_question_probabilty = 0.5
 # model gives 3 to 4 answer options
-total_questions = 4**max_depth + 1
+total_questions = sum(4**depth for depth in range(max_depth + 1))
 pbar = tqdm(total=total_questions)
 
 
@@ -35,41 +36,81 @@ def get_answer_from_model(prompt, pattern):
         )
 
 
-def dfs(previous_question_answers, depth):
+def dfs(previous_question_answers, parent_question_id=None):
     question_id = len(all_questions_answers)
+    questions_left = max_depth - len(previous_question_answers)
 
-    if depth >= max_depth:
-        character_pattern = r'\{"character":\s*"[^"]*"\}'
-        final_character = get_answer_from_model(
-            currnet_prompt(previous_question_answers, True), character_pattern
-        )["character"]
-        all_questions_answers.append((final_character, []))
+    if questions_left <= 0:
+        prompt = currnet_prompt(previous_question_answers, questions_left)
+        pattern = r'\{\s*"character"\s*:\s*"[^"]*"\s*\}'
+        result_from_model = get_answer_from_model(prompt, pattern)
+        all_questions_answers.append((result_from_model["character"], []))
+
+        pbar.update(1)
+        if len(all_questions_answers) % 5 == 0:
+            save_questions_to_file(all_questions_answers)
         return question_id
 
-    question_pattern = (
-        r'\{"question":\s*"[^"]*",\s*"options":\s*\["[^"]*"(?:,\s*"[^"]*")*\]\}'
+    use_duplicate_quesiton = (
+        parent_question_id
+        and random.random() < duplicate_question_probabilty
+        and len(all_questions_answers[parent_question_id][1])
     )
-    new_question = get_answer_from_model(
-        currnet_prompt(previous_question_answers), question_pattern
-    )
-    all_questions_answers.append((new_question["question"], []))
+
+    result_from_model = None
+    if use_duplicate_quesiton:
+        parent_random_option = random.choice(
+            all_questions_answers[parent_question_id][1]
+        )
+        parent_random_child = all_questions_answers[parent_random_option[1]]
+        result_from_model = {
+            "question": parent_random_child[0],
+            "options": [option[0] for option in parent_random_child[1]],
+        }
+
+    if not result_from_model:
+        prompt = currnet_prompt(previous_question_answers, questions_left)
+        pattern = r'\{\s*"question"\s*:\s*"[^"]*"\s*,\s*"options"\s*:\s*\["[^"]*"(?:,\s*"[^"]*")*\s*\]\s*\}'
+        result_from_model = get_answer_from_model(prompt, pattern)
+
+    all_questions_answers.append((result_from_model["question"], []))
+
+    pbar.update(1)
     if len(all_questions_answers) % 5 == 0:
         save_questions_to_file(all_questions_answers)
 
-    pbar.update(1)
-
-    for option_answer in new_question["options"]:
-        next_question_answers = deepcopy(previous_question_answers)
-        next_question_answers.append((new_question["question"], option_answer))
-        answer_question_id = dfs(next_question_answers, depth + 1)
+    for option_answer in result_from_model["options"]:
+        next_question_answers = previous_question_answers + [
+            (result_from_model["question"], option_answer)
+        ]
+        answer_question_id = dfs(
+            next_question_answers,
+            question_id,
+        )
         all_questions_answers[question_id][1].append(
             (option_answer, answer_question_id)
         )
     return question_id
 
 
-dfs([], 0)
-save_questions_to_file(all_questions_answers)
+dfs([])
+filename = save_questions_to_file(all_questions_answers)
 pbar.close()
+print(f"Saved {len(all_questions_answers)} questions/answers to {filename}")
+
+count_bottom_nodes = {}
+for que_ans in all_questions_answers:
+    if len(que_ans[1]) > 0:
+        continue
+    bottom_node = que_ans[0]
+    if bottom_node not in count_bottom_nodes:
+        count_bottom_nodes[bottom_node] = 0
+    count_bottom_nodes[bottom_node] += 1
+
+print(f"Total of {len(count_bottom_nodes)} unique endings")
+for bottom_node, value in reversed(
+    sorted(count_bottom_nodes.items(), key=lambda s: s[1])
+):
+    print(f"* {value}\t{bottom_node}")
 
 final_character = None

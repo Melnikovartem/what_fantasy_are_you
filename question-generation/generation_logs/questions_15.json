@@ -1,0 +1,110 @@
+[
+    [
+        "When faced with a moral dilemma, you usually:",
+        []
+    ],
+    [
+        "When exploring an ancient ruin or mysterious cave, you're most likely to:",
+        [
+            [
+                "Search for hidden treasures and secrets",
+                2
+            ],
+            [
+                "Investigate any strange markings or symbols on the walls",
+                7
+            ]
+        ]
+    ],
+    [
+        "What do you think about taking risks and trying new things?",
+        [
+            [
+                "I love taking calculated risks and exploring new opportunities",
+                3
+            ],
+            [
+                "I prefer to stick with what I know and avoid uncertainty",
+                4
+            ],
+            [
+                "I'm cautious, but willing to take a chance if it could lead to something exciting",
+                5
+            ],
+            [
+                "I'd rather play it safe and avoid any risk at all",
+                6
+            ]
+        ]
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Unicorn",
+        []
+    ],
+    [
+        "What do you think about taking risks and trying new things?",
+        [
+            [
+                "I love taking calculated risks and exploring new opportunities",
+                8
+            ],
+            [
+                "I prefer to stick with what I know and avoid uncertainty",
+                9
+            ],
+            [
+                "I'm cautious, but willing to take a chance if it could lead to something exciting",
+                10
+            ],
+            [
+                "I'd rather play it safe and avoid any risk at all",
+                11
+            ]
+        ]
+    ],
+    [
+        "Phoenix",
+        []
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "What do you think about taking risks and trying new things?",
+        [
+            [
+                "I love taking calculated risks and exploring new opportunities",
+                13
+            ]
+        ]
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Fairy",
+        []
+    ]
+]

@@ -14,12 +14,11 @@ You have been provided with the following information:
 
 * A list of previous questions with the player's answers (provided below)
 * A list of characters that the player may become (provided below)
-
-Using your expertise in game design and your understanding of fantasy storytelling, craft a new question with options for the player to choose from. This question should be designed to further reveal the player's character and guide them towards one of the predetermined characters.
 """
 
 questions = """
-Your Task:
+Using your expertise in game design and your understanding of fantasy storytelling, craft a new question with options for the player to choose from. This question should be designed to further reveal the player's character and guide them towards one of the predetermined characters.
+
 Write a new question with options for the player to choose from. This question should be:
 
 * Relevant to the fantasy setting

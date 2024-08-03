@@ -18,9 +18,9 @@ Previous Questions and Answers:
 
 def currnet_prompt(
     previous_questions_answers,
-    ending: bool = False,
+    questions_left: int,
 ) -> str:
-    formatted_previous_questions = "\n".join(
+    formatted_previous_questions = "\n\n".join(
         f"question: {question[0]}\nanswer: {question[1]}"
         for question in previous_questions_answers
     )
@@ -30,19 +30,29 @@ def currnet_prompt(
             prompts.character_list,
         )
     )
+
+    if questions_left <= 0:
+        prompt_questions = ""
+        prompt_ending = prompts.ending
+    else:
+        prompt_questions = prompts.questions
+        prompt_ending = (
+            f"There are {questions_left} questions left before we will know the result"
+        )
+
     prompt = prompt_template.format(
         prompt_default=prompts.default,
-        prompt_questions=prompts.questions if not ending else "",
+        prompt_questions=prompt_questions,
         character_list=formatted_character_list,
         previous_questions_answers=formatted_previous_questions,
-        prompt_ending=prompts.ending if ending else "",
+        prompt_ending=prompt_ending,
     )
 
     return prompt
 
 
-def save_questions_to_file(questions_list) -> None:
+def save_questions_to_file(questions_list) -> str:
     filename = f"generation_logs/questions_{len(questions_list)}.json"
     with open(filename, "w") as f:
         json.dump(questions_list, f, indent=4)
-    print(f"Saved {len(questions_list)} questions to {filename}")
+    return filename

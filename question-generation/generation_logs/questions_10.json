@@ -1,0 +1,69 @@
+[
+    [
+        "When faced with a moral dilemma, you usually:",
+        []
+    ],
+    [
+        "When exploring an ancient ruin or mysterious cave, you're most likely to:",
+        [
+            [
+                "Search for hidden treasures and secrets",
+                2
+            ]
+        ]
+    ],
+    [
+        "What do you think about taking risks and trying new things?",
+        [
+            [
+                "I love taking calculated risks and exploring new opportunities",
+                3
+            ],
+            [
+                "I prefer to stick with what I know and avoid uncertainty",
+                4
+            ],
+            [
+                "I'm cautious, but willing to take a chance if it could lead to something exciting",
+                5
+            ],
+            [
+                "I'd rather play it safe and avoid any risk at all",
+                6
+            ]
+        ]
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Unicorn",
+        []
+    ],
+    [
+        "What do you think about taking risks and trying new things?",
+        [
+            [
+                "I love taking calculated risks and exploring new opportunities",
+                8
+            ]
+        ]
+    ],
+    [
+        "Phoenix",
+        []
+    ],
+    [
+        "Elf",
+        []
+    ]
+]
