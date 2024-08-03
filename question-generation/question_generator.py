@@ -1,9 +1,11 @@
 import json
-import random
 import re
+from copy import deepcopy
 
 import ollama
 import prompts
+from generation_utils import currnet_prompt, save_questions_to_file
+from tqdm import tqdm
 
 MODEL_NAME = "fantasy-question-creator"
 try:
@@ -14,85 +16,60 @@ except ollama._types.ResponseError:
         modelfile=prompts.modelfile,
     )
 
-previous_questions_answers = []
-character_list = [
-    "Noble Knight",
-    "Cunning Thief",
-    "Wise Wizard",
-    "Fierce Warrior",
-    "Mystical Elf",
-]
-
-prompt_template = """
-{prompt_default}
-{prompt_questions}
-
-Possible Characters:
-{character_list}
-
-Previous Questions and Answers:
-{previous_questions_answers}
-
-{prompt_ending}
-"""
+all_questions_answers = []
+max_depth = 1
+# model gives 3 to 4 answer options
+total_questions = 4**max_depth + 1
+pbar = tqdm(total=total_questions)
 
 
-def currnet_prompt(ending=False):
-    formatted_previous_questions = "\n".join(
-        f"question: {question['question']['question']}\nanswer: {question['player_answer']}"
-        for question in previous_questions_answers
+def get_answer_from_model(prompt, pattern):
+    # while True is not ok, but i need a valid pattern json
+    while True:
+        response = ollama.generate(model=MODEL_NAME, prompt=prompt)["response"]
+        match = re.search(pattern, response)
+        if match:
+            return json.loads(match.group(0))
+        print(
+            f"\n--------------\nError parsing: {pattern}\n{response}\n--------------\n"
+        )
+
+
+def dfs(previous_question_answers, depth):
+    question_id = len(all_questions_answers)
+
+    if depth >= max_depth:
+        character_pattern = r'\{"character":\s*"[^"]*"\}'
+        final_character = get_answer_from_model(
+            currnet_prompt(previous_question_answers, True), character_pattern
+        )["character"]
+        all_questions_answers.append((final_character, []))
+        return question_id
+
+    question_pattern = (
+        r'\{"question":\s*"[^"]*",\s*"options":\s*\["[^"]*"(?:,\s*"[^"]*")*\]\}'
     )
-    formatted_character_list = "* " + "\n* ".join(character_list)
-    prompt = prompt_template.format(
-        prompt_default=prompts.default,
-        prompt_questions=prompts.questions if not ending else "",
-        character_list=formatted_character_list,
-        previous_questions_answers=formatted_previous_questions,
-        prompt_ending=prompts.ending if ending else "",
+    new_question = get_answer_from_model(
+        currnet_prompt(previous_question_answers), question_pattern
     )
+    all_questions_answers.append((new_question["question"], []))
+    if len(all_questions_answers) % 5 == 0:
+        save_questions_to_file(all_questions_answers)
 
-    return prompt
+    pbar.update(1)
+
+    for option_answer in new_question["options"]:
+        next_question_answers = deepcopy(previous_question_answers)
+        next_question_answers.append((new_question["question"], option_answer))
+        answer_question_id = dfs(next_question_answers, depth + 1)
+        all_questions_answers[question_id][1].append(
+            (option_answer, answer_question_id)
+        )
+    return question_id
 
 
-def error_parsing(context, prompt):
-    print(f"\n--------------\nError parsing {context}\n{prompt}\n--------------\n")
-
-
-j = 0
-while j < 4:
-    response = ollama.generate(model=MODEL_NAME, prompt=currnet_prompt())["response"]
-
-    pattern = r'\{"question":\s*"[^"]*",\s*"options":\s*\["[^"]*"(?:,\s*"[^"]*")*\]\}'
-    match = re.search(pattern, response)
-
-    # Print the first match
-    if not match:
-        j -= 1
-        error_parsing("question", response)
-        continue
-
-    new_question = json.loads(match.group(0))
-    player_answer = random.choice(new_question["options"])
-
-    print(f"\n{j}: {new_question['question']}")
-    for i, option in enumerate(new_question["options"]):
-        print(f"* {option}\t{"<--" if option == player_answer else ""}")
-
-    previous_questions_answers.append(
-        {"question": new_question, "player_answer": player_answer}
-    )
-    j += 1
+dfs([], 0)
+save_questions_to_file(all_questions_answers)
+pbar.close()
 
 final_character = None
-
-while not final_character:
-    response = ollama.generate(model=MODEL_NAME, prompt=currnet_prompt(True))[
-        "response"
-    ]
-    pattern = r'\{"character":\s*"[^"]*"\}'
-    match = re.search(pattern, response)
-    if match:
-        final_character = json.loads(match.group(0))["character"]
-    else:
-        error_parsing("character", response)
-print(f"Your character is: {final_character}")

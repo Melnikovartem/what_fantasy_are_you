@@ -1,0 +1,699 @@
+[
+    [
+        "What do you value most in life?",
+        [
+            [
+                "The thrill of adventure and the rush of adrenaline",
+                1
+            ],
+            [
+                "Building strong relationships and a sense of community",
+                22
+            ],
+            [
+                "The pursuit of knowledge and wisdom",
+                43
+            ],
+            [
+                "A peaceful and serene environment, free from conflict",
+                64
+            ]
+        ]
+    ],
+    [
+        "When faced with a difficult decision, what do you usually rely on to guide your choice?",
+        [
+            [
+                "Your gut instinct",
+                2
+            ],
+            [
+                "Logic and reason",
+                7
+            ],
+            [
+                "The opinions of others",
+                12
+            ],
+            [
+                "A sense of duty or responsibility",
+                17
+            ]
+        ]
+    ],
+    [
+        "What is your approach to overcoming obstacles?",
+        [
+            [
+                "I use my wit and cunning to outsmart them",
+                3
+            ],
+            [
+                "I charge forward, relying on my strength and bravery",
+                4
+            ],
+            [
+                "I seek the help of others and rely on their expertise",
+                5
+            ],
+            [
+                "I take a step back, assessing the situation before proceeding",
+                6
+            ]
+        ]
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Dragon",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "How do you typically handle unexpected changes or surprises?",
+        [
+            [
+                "I adapt quickly and see it as an opportunity for growth",
+                8
+            ],
+            [
+                "I prefer to have a plan in place beforehand and adjust as needed",
+                9
+            ],
+            [
+                "I tend to feel anxious or overwhelmed, but try to make the best of it",
+                10
+            ],
+            [
+                "I might get upset, but I'm willing to take risks and face uncertainty head-on",
+                11
+            ]
+        ]
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "How do you approach conflicts or challenges?",
+        [
+            [
+                "I take charge and lead the way, using my strength and cunning to overcome obstacles",
+                13
+            ],
+            [
+                "I seek guidance from trusted allies and advisors, valuing wisdom over individual action",
+                14
+            ],
+            [
+                "I try to find a peaceful solution, negotiating with others and looking for common ground",
+                15
+            ],
+            [
+                "I withdraw and observe, using my insight and strategic thinking to outmaneuver opponents",
+                16
+            ]
+        ]
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "Phoenix",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Goblin",
+        []
+    ],
+    [
+        "How would you describe your approach to dealing with conflict or adversity?",
+        [
+            [
+                "I charge in headfirst and try to overwhelm the problem",
+                18
+            ],
+            [
+                "I take a step back, assess the situation, and plan my next move carefully",
+                19
+            ],
+            [
+                "I look for creative ways to solve the problem without resorting to violence or aggression",
+                20
+            ],
+            [
+                "I try to reason with the opposing force and find a peaceful resolution",
+                21
+            ]
+        ]
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "character_name",
+        []
+    ],
+    [
+        "Phoenix",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "In times of great turmoil or crisis, what do you usually do?",
+        [
+            [
+                "Rally your friends and allies to work together towards a solution",
+                23
+            ],
+            [
+                "I take charge and try to lead the way, even if it means going it alone",
+                28
+            ],
+            [
+                "I seek guidance from those wiser and more experienced than me",
+                33
+            ],
+            [
+                "I retreat and recharge my energy before re-entering the fray",
+                38
+            ]
+        ]
+    ],
+    [
+        "When facing a difficult moral dilemma, what motivates you to make a decision?",
+        [
+            [
+                "My heart tells me what's right",
+                24
+            ],
+            [
+                "I consider the potential consequences and weigh my options",
+                25
+            ],
+            [
+                "I trust my instincts and follow my gut feeling",
+                26
+            ],
+            [
+                "I look for guidance from others or seek clarity on the situation",
+                27
+            ]
+        ]
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "character_name",
+        []
+    ],
+    [
+        "character_name",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "When faced with a difficult decision, how do you typically approach it?",
+        [
+            [
+                "I weigh all the options carefully and consider different perspectives",
+                29
+            ],
+            [
+                "I trust my instincts and go with what feels right",
+                30
+            ],
+            [
+                "I seek guidance from others and value their opinions",
+                31
+            ],
+            [
+                "I try to avoid making the decision altogether, hoping someone else will take care of it",
+                32
+            ]
+        ]
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Fairy",
+        []
+    ],
+    [
+        "When faced with a difficult decision, how do you typically approach it?",
+        [
+            [
+                "I trust my instincts and make a quick decision",
+                34
+            ],
+            [
+                "I weigh all the options carefully and consider multiple perspectives",
+                35
+            ],
+            [
+                "I seek input and advice from others, valuing their insights",
+                36
+            ],
+            [
+                "I avoid making the decision altogether, preferring to stick with what I know",
+                37
+            ]
+        ]
+    ],
+    [
+        "Fairy",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "When facing a difficult decision, how do you typically approach it?",
+        [
+            [
+                "I weigh all the options carefully and consider multiple perspectives",
+                39
+            ],
+            [
+                "I trust my instincts and go with what feels right",
+                40
+            ],
+            [
+                "I seek guidance from others who have more experience or wisdom",
+                41
+            ],
+            [
+                "I try to avoid making the decision altogether, hoping someone else will take care of it",
+                42
+            ]
+        ]
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "Fairy",
+        []
+    ],
+    [
+        "How do you typically handle unexpected challenges or setbacks?",
+        [
+            [
+                "I adapt quickly and find a way to overcome the obstacle, even if it means taking risks.",
+                44
+            ],
+            [
+                "I take my time to think through the situation and come up with a careful plan of action.",
+                49
+            ],
+            [
+                "I tend to get frustrated and try to force my will upon the situation, but sometimes I may need to ask for help or admit defeat.",
+                54
+            ],
+            [
+                "I usually let someone else handle it, as I'm more interested in maintaining harmony and avoiding conflict.",
+                59
+            ]
+        ]
+    ],
+    [
+        "When faced with a difficult decision, what do you usually rely on most to make your choice?",
+        [
+            [
+                "Your logical analysis of the situation",
+                45
+            ],
+            [
+                "Your intuition and gut feeling",
+                46
+            ],
+            [
+                "The opinions and advice of others",
+                47
+            ],
+            [
+                "A combination of these factors",
+                48
+            ]
+        ]
+    ],
+    [
+        "Phoenix",
+        []
+    ],
+    [
+        "Phoenix",
+        []
+    ],
+    [
+        "Fairy",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "How do you approach conflict or disagreements with others?",
+        [
+            [
+                "I try to find common ground and mediate a peaceful resolution",
+                50
+            ],
+            [
+                "I stand firm in my beliefs and am willing to assert myself if necessary",
+                51
+            ],
+            [
+                "I tend to avoid direct confrontation and instead focus on finding indirect solutions",
+                52
+            ],
+            [
+                "I become intensely passionate and argue vigorously, but ultimately aim for understanding",
+                53
+            ]
+        ]
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "In a world filled with wonder and magic, what would you rather be known for?",
+        [
+            [
+                "For your mastery of ancient spells and incantations",
+                55
+            ],
+            [
+                "For your unparalleled skill in crafting magical artifacts",
+                56
+            ],
+            [
+                "For your unwavering commitment to justice and fairness",
+                57
+            ],
+            [
+                "For your unmatched ability to tame the untamed forces of nature",
+                58
+            ]
+        ]
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Phoenix",
+        []
+    ],
+    [
+        "When faced with a difficult decision, what drives your choice most often?",
+        [
+            [
+                "Logic and reason",
+                60
+            ],
+            [
+                "Emotional intuition",
+                61
+            ],
+            [
+                "The desire for power or influence",
+                62
+            ],
+            [
+                "A sense of justice or fairness",
+                63
+            ]
+        ]
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Phoenix",
+        []
+    ],
+    [
+        "Phoenix",
+        []
+    ],
+    [
+        "Nymph",
+        []
+    ],
+    [
+        "How do you approach a problem or challenge?",
+        [
+            [
+                "I'd rather find a creative solution that works for everyone",
+                65
+            ],
+            [
+                "I'd use my strength and determination to overcome it",
+                70
+            ],
+            [
+                "I'd try to negotiate with others to find a compromise",
+                75
+            ],
+            [
+                "I'd take the time to analyze and understand the root cause before acting",
+                80
+            ]
+        ]
+    ],
+    [
+        "When faced with a difficult decision, what do you usually rely on to make your choice?",
+        [
+            [
+                "My intuition and instincts",
+                66
+            ],
+            [
+                "Logic and rational thinking",
+                67
+            ],
+            [
+                "The guidance of others or tradition",
+                68
+            ],
+            [
+                "A combination of all the above",
+                69
+            ]
+        ]
+    ],
+    [
+        "Fairy",
+        []
+    ],
+    [
+        "Gnome",
+        []
+    ],
+    [
+        "Fairy",
+        []
+    ],
+    [
+        "Nymph",
+        []
+    ],
+    [
+        "What drives your sense of purpose and motivation?",
+        [
+            [
+                "The desire to protect and care for others",
+                71
+            ],
+            [
+                "The pursuit of knowledge, wisdom, and self-discovery",
+                72
+            ],
+            [
+                "The need to prove myself in the face of adversity",
+                73
+            ],
+            [
+                "The quest for power and recognition",
+                74
+            ]
+        ]
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Gnome",
+        []
+    ],
+    [
+        "In a group situation, how do you like to contribute?",
+        [
+            [
+                "I'd take charge and lead the group",
+                76
+            ],
+            [
+                "I'd offer my skills and expertise to help out",
+                77
+            ],
+            [
+                "I'd listen and observe, letting others take the lead",
+                78
+            ],
+            [
+                "I'd try to stay behind the scenes, only contributing when necessary",
+                79
+            ]
+        ]
+    ],
+    [
+        "Fairy",
+        []
+    ],
+    [
+        "Nymph",
+        []
+    ],
+    [
+        "Fairy",
+        []
+    ],
+    [
+        "Fairy",
+        []
+    ],
+    [
+        "What is your relationship with nature?",
+        [
+            [
+                "I am deeply connected to nature and see myself as a part of it.",
+                81
+            ],
+            [
+                "I respect and appreciate nature, but also value my place in human society.",
+                82
+            ],
+            [
+                "I see nature as something to be conquered and dominated.",
+                83
+            ],
+            [
+                "I don't have much interest or connection to nature.",
+                84
+            ]
+        ]
+    ],
+    [
+        "Gnome",
+        []
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "Orc",
+        []
+    ],
+    [
+        "Fairy",
+        []
+    ]
+]
