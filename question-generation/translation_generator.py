@@ -44,8 +44,10 @@ for key in all_strings:
 
 for i, question in enumerate(data):
     data[i][0] = text_ids[question[0]]
+    store_in_dict = {}
     for j, answer in enumerate(question[1]):
-        data[i][1][j][0] = text_ids[answer[0]]
+        store_in_dict[text_ids[answer[0]]] = answer[1]
+    data[i][1] = store_in_dict
 
 
 with open(QUESTIONS_TRANSLATION_FILE, "w") as new_json_file:

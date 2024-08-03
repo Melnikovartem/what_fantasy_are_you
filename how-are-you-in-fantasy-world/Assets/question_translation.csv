@@ -1,0 +1,97 @@
+key,en
+CH_1,Banshee
+CH_3,Basilisk
+CH_4,Boggart
+CH_6,Centaur
+CH_7,Chimera
+CH_9,Cyclops
+CH_11,Demon
+CH_13,Djinn
+CH_15,Dragon
+CH_17,Dwarf
+CH_19,Elf
+CH_21,Fairy
+CH_23,Gargoyle
+CH_25,Ghost
+CH_26,Giant
+CH_28,Gnome
+CH_30,Goblin
+CH_32,Griffin
+CH_33,Harpy
+CH_34,Hydra
+CH_35,Kelpie
+CH_37,Leprechaun
+CH_38,Lich
+CH_40,Mermaid
+CH_42,Minotaur
+CH_44,Nymph
+CH_46,Orc
+CH_47,Pegasus
+CH_49,Phoenix
+CH_51,Satyr
+CH_53,Sphinx
+CH_55,Troll
+CH_57,Unicorn
+CH_59,Vampire
+CH_61,Wendigo
+CH_63,Werewolf
+Q_0,"In times of turmoil or chaos, how do you usually respond?"
+Q_1,"What do you value more: stability and routine, or the thrill of uncertainty and adventure?"
+Q_3,What drives you to take action when faced with injustice or oppression?
+Q_4,What is the most important quality for you in forming and maintaining relationships?
+Q_5,What motivates you to take risks or push boundaries?
+Q_7,"When dealing with complex social situations, do you prefer to:"
+Q_10,"When exploring a mysterious place, what drives your curiosity?"
+Q_11,"When exploring a mysterious place, what is most important to you?"
+Q_14,"When exploring an abandoned ruin, what do you usually look for first?"
+Q_15,"When faced with a difficult decision, what do you typically rely on to guide your choice?"
+Q_19,"When facing a great challenge or adversity, how do you typically respond?"
+Q_20,"When navigating unfamiliar territory, what do you usually prioritize?"
+AN_0,A desire to test my own limits and see what I'm capable of
+AN_1,A higher power or divine guidance
+AN_2,"A mix of both, I like having a sense of security but also being open to new experiences"
+AN_3,A sense of duty to prove myself to others
+AN_6,A sense of responsibility to uncover the source of a mystery
+AN_9,A way to escape or a safe route out
+AN_12,Ancient artifacts or relics
+AN_15,"Any signs of recent or past life, such as clues or graffiti"
+AN_17,Avoid confrontation and step back
+AN_18,Building trust through shared experiences
+AN_22,By finding creative ways to circumvent it
+AN_26,By retreating and re-evaluating my approach
+AN_30,By seeking help from others
+AN_31,Emotional connections and relationships
+AN_32,Exploring every nook and cranny
+AN_33,Fear of being left behind or missing out on an opportunity
+AN_34,Finding a safe route to your destination
+AN_35,Finding ways to utilize the space for your own benefit
+AN_36,Fostering a sense of mutual respect and admiration
+AN_37,I crave stability and routine
+AN_38,I let my emotions run wild and take action instinctively
+AN_39,I seek guidance from others and follow their lead
+AN_40,I tend to retreat and observe from a safe distance
+AN_41,I try to stay calm and think clearly
+AN_42,Logic and rational thinking
+AN_44,Manipulate the situation to achieve your goals
+AN_45,Manipulating others to get what I want
+AN_46,"Neither, I prefer to avoid change altogether"
+AN_48,Observe and listen before speaking up
+AN_51,Potential traps or hidden dangers
+AN_52,Seeking out local guides or allies
+AN_53,Sharing secrets and fostering a sense of belonging
+AN_55,Take charge and lead the group
+AN_58,The desire to uncover the truth behind a legend
+AN_59,The discovery of hidden secrets
+AN_62,The potential for hidden treasures or secrets
+AN_65,The thrill of facing unknown dangers and overcoming them
+AN_66,The thrill of potential danger
+AN_67,The thrill of uncertainty and adventure calls to me
+AN_68,The thrill of uncertainty and the possibility of gaining something new
+AN_69,Understanding the history and culture behind the place
+AN_70,Using magical or technological means to get a clear view of the area
+AN_74,With determination to overcome it
+AN_76,You believe in finding ways to subvert or undermine the oppressive system from within
+AN_78,You feel compelled to stand up and fight against the oppressors with physical force
+AN_80,You prefer to maintain a safe distance and focus on protecting yourself and those you care about
+AN_82,You want to use your words to rally others and advocate for change
+AN_83,Your instincts and intuition
