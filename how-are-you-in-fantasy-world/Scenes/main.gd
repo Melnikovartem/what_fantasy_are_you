@@ -23,6 +23,7 @@ func update_state(question_info):
 		if len(question_info[1]) > i:
 			text = question_info[1][i]
 		answers[i].text = text
+		answers[i].get_parent().visible = text != ""
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

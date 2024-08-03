@@ -28,7 +28,7 @@ window/stretch/aspect="expand"
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://translations.en.translation", "res://translations.ru.translation")
+locale/translations=PackedStringArray("res://Assets/Translations/question_translation.en.translation", "res://Assets/Translations/question_translation.ru.translation")
 
 [rendering]
 

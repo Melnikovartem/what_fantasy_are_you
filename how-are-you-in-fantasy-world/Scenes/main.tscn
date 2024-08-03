@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://ckstbbh44oca3"]
 
 [ext_resource type="Script" path="res://Scenes/main.gd" id="1_c2eof"]
-[ext_resource type="Texture2D" uid="uid://5xgr34umid30" path="res://Backgrounds/main_Background.png" id="2_mqspa"]
+[ext_resource type="Texture2D" uid="uid://5xgr34umid30" path="res://Assets/Backgrounds/main_Background.png" id="2_mqspa"]
 [ext_resource type="StyleBox" uid="uid://cu50l42xqsrwl" path="res://Styles/button_style.tres" id="3_n6o8d"]
 
 [node name="Control" type="Node"]
