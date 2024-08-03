@@ -16,18 +16,28 @@ Previous Questions and Answers:
 """
 
 
-def currnet_prompt(
+def current_prompt(
     previous_questions_answers,
     questions_left: int,
+    character_count: dict,
 ) -> str:
     formatted_previous_questions = "\n\n".join(
         f"question: {question[0]}\nanswer: {question[1]}"
         for question in previous_questions_answers
     )
+    character_list = sorted(
+        prompts.character_list, key=lambda ch: character_count.get(ch[0], 0)
+    )
+    if questions_left <= 0:
+        character_list = character_list[: round(len(character_list) * 0.25)]
+    elif questions_left <= 1:
+        character_list = character_list[: round(len(character_list) * 0.5)]
+    elif questions_left <= 2:
+        character_list = character_list[: round(len(character_list) * 0.75)]
     formatted_character_list = "\n".join(
         map(
             lambda creature: f"* {creature[0]}\n * * {creature[1]}",
-            prompts.character_list,
+            character_list,
         )
     )
 

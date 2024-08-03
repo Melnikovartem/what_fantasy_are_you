@@ -43,61 +43,45 @@ ending = """
 **DO NOT SEND ANYTHING ELSE**
 """
 
-character_list = [
-    (
-        "Elf",
-        "Tall, graceful beings with pointed ears, known for their longevity and magic.",
-    ),
-    (
-        "Dwarf",
-        "Short, sturdy, and often bearded, they are master craftsmen and miners.",
-    ),
+character_list = creatures = [
+    ("Elf", "Tall, graceful beings with pointed ears, known for their longevity and magic."),
+    ("Dwarf", "Short, sturdy, and often bearded, they are master craftsmen and miners."),
     ("Dragon", "Large, powerful reptiles that can fly and breathe fire."),
     ("Orc", "Green-skinned, brutish warriors with a savage nature."),
     ("Troll", "Large, slow-witted creatures, often living under bridges or in caves."),
-    (
-        "Fairy",
-        "Small, winged beings with magical abilities, often depicted as mischievous.",
-    ),
+    ("Fairy", "Small, winged beings with magical abilities, often depicted as mischievous."),
     ("Vampire", "Undead creatures that feed on the blood of the living."),
-    (
-        "Werewolf",
-        "Humans who can transform into wolves or wolf-like creatures, often during a full moon.",
-    ),
-    (
-        "Mermaid",
-        "Aquatic beings with the upper body of a human and the tail of a fish.",
-    ),
+    ("Werewolf", "Humans who can transform into wolves or wolf-like creatures, often during a full moon."),
+    ("Mermaid", "Aquatic beings with the upper body of a human and the tail of a fish."),
     ("Goblin", "Small, cunning creatures often associated with thievery and mischief."),
-    (
-        "Gnome",
-        "Small, earth-dwelling beings known for their connection to nature and gardening.",
-    ),
-    (
-        "Centaur",
-        "Creatures with the upper body of a human and the lower body of a horse.",
-    ),
-    (
-        "Phoenix",
-        "Mythical birds that can burst into flames and are reborn from their ashes.",
-    ),
-    (
-        "Griffin",
-        "Creatures with the body of a lion and the head and wings of an eagle.",
-    ),
-    (
-        "Unicorn",
-        "Magical horses with a single horn on their forehead, often symbolizing purity.",
-    ),
+    ("Gnome", "Small, earth-dwelling beings known for their connection to nature and gardening."),
+    ("Centaur", "Creatures with the upper body of a human and the lower body of a horse."),
+    ("Phoenix", "Mythical birds that can burst into flames and are reborn from their ashes."),
+    ("Griffin", "Creatures with the body of a lion and the head and wings of an eagle."),
+    ("Unicorn", "Magical horses with a single horn on their forehead, often symbolizing purity."),
     ("Minotaur", "Beings with the body of a human and the head of a bull."),
     ("Zombie", "Reanimated corpses with a hunger for human flesh."),
-    (
-        "Giant",
-        "Enormous humanoid beings, often very strong and sometimes simple-minded.",
-    ),
-    (
-        "Nymph",
-        "Nature spirits often associated with particular natural features like trees, rivers, and mountains.",
-    ),
+    ("Giant", "Enormous humanoid beings, often very strong and sometimes simple-minded."),
+    ("Nymph", "Nature spirits often associated with particular natural features like trees, rivers, and mountains."),
     ("Demon", "Malevolent supernatural beings often associated with evil and chaos."),
+    ("Ghost", "Spirits of the dead that can haunt the living and places."),
+    ("Banshee", "A wailing spirit that heralds the death of a family member."),
+    ("Harpy", "Creatures with the body of a bird and the face of a woman, known for their vicious nature."),
+    ("Kraken", "Enormous sea monsters capable of dragging ships underwater."),
+    ("Cyclops", "Giant beings with a single eye in the middle of their forehead."),
+    ("Hydra", "Multi-headed serpentine creatures, where cutting off one head causes two more to grow back."),
+    ("Chimera", "Monsters with the body of a lion, the head of a goat, and the tail of a serpent."),
+    ("Sphinx", "Creatures with the body of a lion and the head of a human, known for their riddles."),
+    ("Leprechaun", "Small, bearded men, often associated with Irish folklore and known for their trickery and hidden pots of gold."),
+    ("Basilisk", "A serpent king that can cause death with a single glance."),
+    ("Satyr", "Half-human, half-goat beings known for their love of music and revelry."),
+    ("Kelpie", "Shape-shifting water spirits that often appear as horses and are known for drowning unwary travelers."),
+    ("Djinn", "Supernatural beings from Arabian folklore, capable of granting wishes but often with a twist."),
+    ("Wendigo", "Cannibalistic spirits from Native American folklore, associated with insatiable hunger and cold environments."),
+    ("Pegasus", "Winged horses known for their beauty and ability to fly."),
+    ("Chupacabra", "Cryptid known for attacking livestock, particularly goats, and draining their blood."),
+    ("Gargoyle", "Stone creatures that come to life, often serving as protectors of buildings."),
+    ("Lich", "Powerful undead sorcerers who have achieved immortality through necromancy."),
+    ("Boggart", "Shape-shifting creatures that take the form of one's worst fears.")
 ]
+

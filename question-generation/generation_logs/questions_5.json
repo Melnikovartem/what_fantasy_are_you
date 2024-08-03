@@ -1,27 +1,39 @@
 [
     [
-        "When faced with a moral dilemma, you usually:",
-        []
-    ],
-    [
-        "When exploring an ancient ruin or mysterious cave, you're most likely to:",
-        []
-    ],
-    [
-        "What do you think about taking risks and trying new things?",
+        "What do you value most in life?",
         [
             [
-                "I love taking calculated risks and exploring new opportunities",
+                "The freedom to follow your own path",
+                1
+            ],
+            [
+                "Honor, loyalty, and protection of those you care about",
+                2
+            ],
+            [
+                "The pursuit of knowledge and wisdom",
                 3
+            ],
+            [
+                "The thrill of adventure and taking risks",
+                4
             ]
         ]
     ],
     [
-        "Centaur",
+        "Elf",
         []
     ],
     [
-        "Centaur",
+        "Dwarf",
+        []
+    ],
+    [
+        "Fairy",
+        []
+    ],
+    [
+        "Werewolf",
         []
     ]
 ]

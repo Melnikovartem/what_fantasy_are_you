@@ -4,7 +4,7 @@ import re
 
 import ollama
 import prompts
-from generation_utils import currnet_prompt, save_questions_to_file
+from generation_utils import current_prompt, save_questions_to_file
 from tqdm import tqdm
 
 MODEL_NAME = "fantasy-question-creator"
@@ -17,6 +17,7 @@ except ollama._types.ResponseError:
     )
 
 all_questions_answers = []
+count_bottom_nodes = {}
 max_depth = 3
 duplicate_question_probabilty = 0.5
 # model gives 3 to 4 answer options
@@ -41,14 +42,19 @@ def dfs(previous_question_answers, parent_question_id=None):
     questions_left = max_depth - len(previous_question_answers)
 
     if questions_left <= 0:
-        prompt = currnet_prompt(previous_question_answers, questions_left)
+        prompt = current_prompt(
+            previous_question_answers, questions_left, count_bottom_nodes
+        )
         pattern = r'\{\s*"character"\s*:\s*"[^"]*"\s*\}'
         result_from_model = get_answer_from_model(prompt, pattern)
-        all_questions_answers.append((result_from_model["character"], []))
+        character = result_from_model["character"]
+        all_questions_answers.append((character, []))
+
+        if character not in count_bottom_nodes:
+            count_bottom_nodes[character] = 0
+        count_bottom_nodes[character] += 1
 
         pbar.update(1)
-        if len(all_questions_answers) % 5 == 0:
-            save_questions_to_file(all_questions_answers)
         return question_id
 
     use_duplicate_quesiton = (
@@ -69,15 +75,14 @@ def dfs(previous_question_answers, parent_question_id=None):
         }
 
     if not result_from_model:
-        prompt = currnet_prompt(previous_question_answers, questions_left)
+        prompt = current_prompt(
+            previous_question_answers, questions_left, count_bottom_nodes
+        )
         pattern = r'\{\s*"question"\s*:\s*"[^"]*"\s*,\s*"options"\s*:\s*\["[^"]*"(?:,\s*"[^"]*")*\s*\]\s*\}'
         result_from_model = get_answer_from_model(prompt, pattern)
 
     all_questions_answers.append((result_from_model["question"], []))
-
     pbar.update(1)
-    if len(all_questions_answers) % 5 == 0:
-        save_questions_to_file(all_questions_answers)
 
     for option_answer in result_from_model["options"]:
         next_question_answers = previous_question_answers + [
@@ -96,21 +101,10 @@ def dfs(previous_question_answers, parent_question_id=None):
 dfs([])
 filename = save_questions_to_file(all_questions_answers)
 pbar.close()
+
 print(f"Saved {len(all_questions_answers)} questions/answers to {filename}")
-
-count_bottom_nodes = {}
-for que_ans in all_questions_answers:
-    if len(que_ans[1]) > 0:
-        continue
-    bottom_node = que_ans[0]
-    if bottom_node not in count_bottom_nodes:
-        count_bottom_nodes[bottom_node] = 0
-    count_bottom_nodes[bottom_node] += 1
-
 print(f"Total of {len(count_bottom_nodes)} unique endings")
 for bottom_node, value in reversed(
     sorted(count_bottom_nodes.items(), key=lambda s: s[1])
 ):
     print(f"* {value}\t{bottom_node}")
-
-final_character = None

@@ -1,171 +1,66 @@
 [
+  [
+    "In a time of great turmoil or conflict, how would you prefer to contribute?",
     [
-        "In a time of great turmoil or conflict, how would you prefer to contribute?",
-        [
-            [
-                "Use my skills to help negotiate a peaceful resolution",
-                1
-            ],
-            [
-                "Stand strong and defend those who need protection",
-                6
-            ],
-            [
-                "Use my cunning to outmaneuver and outsmart the enemy",
-                11
-            ],
-            [
-                "Join forces with others to work together towards a common goal",
-                16
-            ]
-        ]
-    ],
-    [
-        "When facing a difficult decision, do you rely more on logic and reason or intuition and instinct?",
-        [
-            [
-                "I trust my logical thinking to guide me through complex choices",
-                2
-            ],
-            [
-                "I rely on my instincts and gut feelings to make decisions",
-                3
-            ],
-            [
-                "Some decisions are too big for me to handle alone, I prefer seeking advice from others",
-                4
-            ],
-            [
-                "I'm not sure, it depends on the situation",
-                5
-            ]
-        ]
-    ],
-    [
-        "Elf",
-        []
-    ],
-    [
-        "Elf",
-        []
-    ],
-    [
-        "Elf",
-        []
-    ],
-    [
-        "Elf",
-        []
-    ],
-    [
-        "In a world where magic is a powerful force, what do you believe is the most important quality for a wielder of such power to possess?",
-        [
-            [
-                "Wisdom to use their powers responsibly",
-                7
-            ],
-            [
-                "Courage to take risks and face challenges",
-                8
-            ],
-            [
-                "Creativity to innovate and adapt",
-                9
-            ],
-            [
-                "Strength to dominate and control",
-                10
-            ]
-        ]
-    ],
-    [
-        "Centaur",
-        []
-    ],
-    [
-        "Centaur",
-        []
-    ],
-    [
-        "Centaur",
-        []
-    ],
-    [
-        "Minotaur",
-        []
-    ],
-    [
-        "In times of peace and prosperity, what do you most value in your life?",
-        [
-            [
-                "The pursuit of knowledge and understanding",
-                12
-            ],
-            [
-                "The freedom to roam and explore new lands",
-                13
-            ],
-            [
-                "The comfort and security of a well-established community",
-                14
-            ],
-            [
-                "The thrill of adventure and the rush of adrenaline",
-                15
-            ]
-        ]
-    ],
-    [
-        "Gnome",
-        []
-    ],
-    [
-        "Elf",
-        []
-    ],
-    [
-        "Goblin",
-        []
-    ],
-    [
-        "Orc",
-        []
-    ],
-    [
-        "When faced with a difficult decision, what guides your thinking?",
-        [
-            [
-                "My emotions and intuition",
-                17
-            ],
-            [
-                "The needs of my loved ones or community",
-                18
-            ],
-            [
-                "My rational judgment and analysis",
-                19
-            ],
-            [
-                "A higher power or spiritual guidance",
-                20
-            ]
-        ]
-    ],
-    [
-        "Elf",
-        []
-    ],
-    [
-        "Elf",
-        []
-    ],
-    [
-        "Elf",
-        []
-    ],
-    [
-        "Elf",
-        []
+      ["Use my skills to help negotiate a peaceful resolution", 1],
+      ["Stand strong and defend those who need protection", 6],
+      ["Use my cunning to outmaneuver and outsmart the enemy", 11],
+      ["Join forces with others to work together towards a common goal", 16]
     ]
+  ],
+  [
+    "When facing a difficult decision, do you rely more on logic and reason or intuition and instinct?",
+    [
+      ["I trust my logical thinking to guide me through complex choices", 2],
+      ["I rely on my instincts and gut feelings to make decisions", 3],
+      [
+        "Some decisions are too big for me to handle alone, I prefer seeking advice from others",
+        4
+      ],
+      ["I'm not sure, it depends on the situation", 5]
+    ]
+  ],
+  ["Elf", []],
+  ["Elf", []],
+  ["Elf", []],
+  ["Elf", []],
+  [
+    "In a world where magic is a powerful force, what do you believe is the most important quality for a wielder of such power to possess?",
+    [
+      ["Wisdom to use their powers responsibly", 7],
+      ["Courage to take risks and face challenges", 8],
+      ["Creativity to innovate and adapt", 9],
+      ["Strength to dominate and control", 10]
+    ]
+  ],
+  ["Centaur", []],
+  ["Centaur", []],
+  ["Centaur", []],
+  ["Minotaur", []],
+  [
+    "In times of peace and prosperity, what do you most value in your life?",
+    [
+      ["The pursuit of knowledge and understanding", 12],
+      ["The freedom to roam and explore new lands", 13],
+      ["The comfort and security of a well-established community", 14],
+      ["The thrill of adventure and the rush of adrenaline", 15]
+    ]
+  ],
+  ["Gnome", []],
+  ["Elf", []],
+  ["Goblin", []],
+  ["Orc", []],
+  [
+    "When faced with a difficult decision, what guides your thinking?",
+    [
+      ["My emotions and intuition", 17],
+      ["The needs of my loved ones or community", 18],
+      ["My rational judgment and analysis", 19],
+      ["A higher power or spiritual guidance", 20]
+    ]
+  ],
+  ["Elf", []],
+  ["Elf", []],
+  ["Elf", []],
+  ["Elf", []]
 ]
