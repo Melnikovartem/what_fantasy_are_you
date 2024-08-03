@@ -1,0 +1,699 @@
+[
+    [
+        "When faced with a difficult decision, what do you typically rely on to guide your choice?",
+        [
+            [
+                "Your instincts and intuition",
+                1
+            ],
+            [
+                "Logic and rational thinking",
+                22
+            ],
+            [
+                "Emotional connections and relationships",
+                43
+            ],
+            [
+                "A higher power or divine guidance",
+                64
+            ]
+        ]
+    ],
+    [
+        "When exploring a mysterious place, what is most important to you?",
+        [
+            [
+                "The discovery of hidden secrets",
+                2
+            ],
+            [
+                "The thrill of potential danger",
+                7
+            ],
+            [
+                "Understanding the history and culture behind the place",
+                12
+            ],
+            [
+                "Finding ways to utilize the space for your own benefit",
+                17
+            ]
+        ]
+    ],
+    [
+        "What drives you to take action when faced with injustice or oppression?",
+        [
+            [
+                "You want to use your words to rally others and advocate for change",
+                3
+            ],
+            [
+                "You feel compelled to stand up and fight against the oppressors with physical force",
+                4
+            ],
+            [
+                "You believe in finding ways to subvert or undermine the oppressive system from within",
+                5
+            ],
+            [
+                "You prefer to maintain a safe distance and focus on protecting yourself and those you care about",
+                6
+            ]
+        ]
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "Werewolf",
+        []
+    ],
+    [
+        "Fairy",
+        []
+    ],
+    [
+        "Phoenix",
+        []
+    ],
+    [
+        "What drives you to take action when faced with injustice or oppression?",
+        [
+            [
+                "You want to use your words to rally others and advocate for change",
+                8
+            ],
+            [
+                "You feel compelled to stand up and fight against the oppressors with physical force",
+                9
+            ],
+            [
+                "You believe in finding ways to subvert or undermine the oppressive system from within",
+                10
+            ],
+            [
+                "You prefer to maintain a safe distance and focus on protecting yourself and those you care about",
+                11
+            ]
+        ]
+    ],
+    [
+        "Mermaid",
+        []
+    ],
+    [
+        "Orc",
+        []
+    ],
+    [
+        "Goblin",
+        []
+    ],
+    [
+        "Minotaur",
+        []
+    ],
+    [
+        "When dealing with complex social situations, do you prefer to:",
+        [
+            [
+                "Take charge and lead the group",
+                13
+            ],
+            [
+                "Observe and listen before speaking up",
+                14
+            ],
+            [
+                "Avoid confrontation and step back",
+                15
+            ],
+            [
+                "Manipulate the situation to achieve your goals",
+                16
+            ]
+        ]
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Nymph",
+        []
+    ],
+    [
+        "Gnome",
+        []
+    ],
+    [
+        "Demon",
+        []
+    ],
+    [
+        "When dealing with complex social situations, do you prefer to:",
+        [
+            [
+                "Take charge and lead the group",
+                18
+            ],
+            [
+                "Observe and listen before speaking up",
+                19
+            ],
+            [
+                "Avoid confrontation and step back",
+                20
+            ],
+            [
+                "Manipulate the situation to achieve your goals",
+                21
+            ]
+        ]
+    ],
+    [
+        "Dragon",
+        []
+    ],
+    [
+        "Griffin",
+        []
+    ],
+    [
+        "Troll",
+        []
+    ],
+    [
+        "Vampire",
+        []
+    ],
+    [
+        "When navigating unfamiliar territory, what do you usually prioritize?",
+        [
+            [
+                "Exploring every nook and cranny",
+                23
+            ],
+            [
+                "Finding a safe route to your destination",
+                28
+            ],
+            [
+                "Seeking out local guides or allies",
+                33
+            ],
+            [
+                "Using magical or technological means to get a clear view of the area",
+                38
+            ]
+        ]
+    ],
+    [
+        "When facing a great challenge or adversity, how do you typically respond?",
+        [
+            [
+                "With determination to overcome it",
+                24
+            ],
+            [
+                "By seeking help from others",
+                25
+            ],
+            [
+                "By finding creative ways to circumvent it",
+                26
+            ],
+            [
+                "By retreating and re-evaluating my approach",
+                27
+            ]
+        ]
+    ],
+    [
+        "Cyclops",
+        []
+    ],
+    [
+        "Dwarf",
+        []
+    ],
+    [
+        "Sphinx",
+        []
+    ],
+    [
+        "Giant",
+        []
+    ],
+    [
+        "When facing a great challenge or adversity, how do you typically respond?",
+        [
+            [
+                "With determination to overcome it",
+                29
+            ],
+            [
+                "By seeking help from others",
+                30
+            ],
+            [
+                "By finding creative ways to circumvent it",
+                31
+            ],
+            [
+                "By retreating and re-evaluating my approach",
+                32
+            ]
+        ]
+    ],
+    [
+        "Hydra",
+        []
+    ],
+    [
+        "Satyr",
+        []
+    ],
+    [
+        "Kelpie",
+        []
+    ],
+    [
+        "Leprechaun",
+        []
+    ],
+    [
+        "When facing a great challenge or adversity, how do you typically respond?",
+        [
+            [
+                "With determination to overcome it",
+                34
+            ],
+            [
+                "By seeking help from others",
+                35
+            ],
+            [
+                "By finding creative ways to circumvent it",
+                36
+            ],
+            [
+                "By retreating and re-evaluating my approach",
+                37
+            ]
+        ]
+    ],
+    [
+        "Chimera",
+        []
+    ],
+    [
+        "Pegasus",
+        []
+    ],
+    [
+        "Djinn",
+        []
+    ],
+    [
+        "Gargoyle",
+        []
+    ],
+    [
+        "When facing a great challenge or adversity, how do you typically respond?",
+        [
+            [
+                "With determination to overcome it",
+                39
+            ],
+            [
+                "By seeking help from others",
+                40
+            ],
+            [
+                "By finding creative ways to circumvent it",
+                41
+            ],
+            [
+                "By retreating and re-evaluating my approach",
+                42
+            ]
+        ]
+    ],
+    [
+        "Basilisk",
+        []
+    ],
+    [
+        "Lich",
+        []
+    ],
+    [
+        "Elf",
+        []
+    ],
+    [
+        "Banshee",
+        []
+    ],
+    [
+        "In times of turmoil or chaos, how do you usually respond?",
+        [
+            [
+                "I try to stay calm and think clearly",
+                44
+            ],
+            [
+                "I let my emotions run wild and take action instinctively",
+                49
+            ],
+            [
+                "I seek guidance from others and follow their lead",
+                54
+            ],
+            [
+                "I tend to retreat and observe from a safe distance",
+                59
+            ]
+        ]
+    ],
+    [
+        "When exploring a mysterious place, what drives your curiosity?",
+        [
+            [
+                "The potential for hidden treasures or secrets",
+                45
+            ],
+            [
+                "The desire to uncover the truth behind a legend",
+                46
+            ],
+            [
+                "The thrill of facing unknown dangers and overcoming them",
+                47
+            ],
+            [
+                "A sense of responsibility to uncover the source of a mystery",
+                48
+            ]
+        ]
+    ],
+    [
+        "Unicorn",
+        []
+    ],
+    [
+        "Ghost",
+        []
+    ],
+    [
+        "Dragon",
+        []
+    ],
+    [
+        "Dwarf",
+        []
+    ],
+    [
+        "What motivates you to take risks or push boundaries?",
+        [
+            [
+                "The thrill of uncertainty and the possibility of gaining something new",
+                50
+            ],
+            [
+                "A sense of duty to prove myself to others",
+                51
+            ],
+            [
+                "A desire to test my own limits and see what I'm capable of",
+                52
+            ],
+            [
+                "Fear of being left behind or missing out on an opportunity",
+                53
+            ]
+        ]
+    ],
+    [
+        "Fairy",
+        []
+    ],
+    [
+        "Werewolf",
+        []
+    ],
+    [
+        "Wendigo",
+        []
+    ],
+    [
+        "Harpy",
+        []
+    ],
+    [
+        "When exploring a mysterious place, what drives your curiosity?",
+        [
+            [
+                "The potential for hidden treasures or secrets",
+                55
+            ],
+            [
+                "The desire to uncover the truth behind a legend",
+                56
+            ],
+            [
+                "The thrill of facing unknown dangers and overcoming them",
+                57
+            ],
+            [
+                "A sense of responsibility to uncover the source of a mystery",
+                58
+            ]
+        ]
+    ],
+    [
+        "Mermaid",
+        []
+    ],
+    [
+        "Centaur",
+        []
+    ],
+    [
+        "Phoenix",
+        []
+    ],
+    [
+        "Gnome",
+        []
+    ],
+    [
+        "When exploring a mysterious place, what drives your curiosity?",
+        [
+            [
+                "The potential for hidden treasures or secrets",
+                60
+            ],
+            [
+                "The desire to uncover the truth behind a legend",
+                61
+            ],
+            [
+                "The thrill of facing unknown dangers and overcoming them",
+                62
+            ],
+            [
+                "A sense of responsibility to uncover the source of a mystery",
+                63
+            ]
+        ]
+    ],
+    [
+        "Goblin",
+        []
+    ],
+    [
+        "Minotaur",
+        []
+    ],
+    [
+        "Troll",
+        []
+    ],
+    [
+        "Nymph",
+        []
+    ],
+    [
+        "What is the most important quality for you in forming and maintaining relationships?",
+        [
+            [
+                "Building trust through shared experiences",
+                65
+            ],
+            [
+                "Fostering a sense of mutual respect and admiration",
+                70
+            ],
+            [
+                "Sharing secrets and fostering a sense of belonging",
+                75
+            ],
+            [
+                "Manipulating others to get what I want",
+                80
+            ]
+        ]
+    ],
+    [
+        "What do you value more: stability and routine, or the thrill of uncertainty and adventure?",
+        [
+            [
+                "I crave stability and routine",
+                66
+            ],
+            [
+                "The thrill of uncertainty and adventure calls to me",
+                67
+            ],
+            [
+                "A mix of both, I like having a sense of security but also being open to new experiences",
+                68
+            ],
+            [
+                "Neither, I prefer to avoid change altogether",
+                69
+            ]
+        ]
+    ],
+    [
+        "Orc",
+        []
+    ],
+    [
+        "Vampire",
+        []
+    ],
+    [
+        "Banshee",
+        []
+    ],
+    [
+        "Ghost",
+        []
+    ],
+    [
+        "When exploring an abandoned ruin, what do you usually look for first?",
+        [
+            [
+                "Ancient artifacts or relics",
+                71
+            ],
+            [
+                "Potential traps or hidden dangers",
+                72
+            ],
+            [
+                "A way to escape or a safe route out",
+                73
+            ],
+            [
+                "Any signs of recent or past life, such as clues or graffiti",
+                74
+            ]
+        ]
+    ],
+    [
+        "Griffin",
+        []
+    ],
+    [
+        "Demon",
+        []
+    ],
+    [
+        "Boggart",
+        []
+    ],
+    [
+        "Sphinx",
+        []
+    ],
+    [
+        "When exploring an abandoned ruin, what do you usually look for first?",
+        [
+            [
+                "Ancient artifacts or relics",
+                76
+            ],
+            [
+                "Potential traps or hidden dangers",
+                77
+            ],
+            [
+                "A way to escape or a safe route out",
+                78
+            ],
+            [
+                "Any signs of recent or past life, such as clues or graffiti",
+                79
+            ]
+        ]
+    ],
+    [
+        "Unicorn",
+        []
+    ],
+    [
+        "Basilisk",
+        []
+    ],
+    [
+        "Leprechaun",
+        []
+    ],
+    [
+        "Satyr",
+        []
+    ],
+    [
+        "When exploring an abandoned ruin, what do you usually look for first?",
+        [
+            [
+                "Ancient artifacts or relics",
+                81
+            ],
+            [
+                "Potential traps or hidden dangers",
+                82
+            ],
+            [
+                "A way to escape or a safe route out",
+                83
+            ],
+            [
+                "Any signs of recent or past life, such as clues or graffiti",
+                84
+            ]
+        ]
+    ],
+    [
+        "Djinn",
+        []
+    ],
+    [
+        "Cyclops",
+        []
+    ],
+    [
+        "Wendigo",
+        []
+    ],
+    [
+        "Gargoyle",
+        []
+    ]
+]

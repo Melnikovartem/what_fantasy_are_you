@@ -1,0 +1,1398 @@
+[
+  [
+    "In times of great turmoil or danger, what do you usually rely on to help guide your decisions?",
+    [
+      ["Your intuition and gut feeling", 1],
+      ["Logic and rational thinking", 86],
+      ["The advice of trusted friends or mentors", 165],
+      ["A higher power or divine intervention", 250]
+    ]
+  ],
+  [
+    "When faced with a difficult choice that affects not just yourself, but also those around you, how do you typically decide what to do?",
+    [
+      ["I follow my heart and trust my instincts", 2],
+      ["I weigh the pros and cons and make a logical decision", 23],
+      ["I seek input from others and try to find a consensus", 44],
+      [
+        "I take charge and make the decision myself, no matter what others think",
+        65
+      ]
+    ]
+  ],
+  [
+    "What motivates you to take risks and push beyond your limits?",
+    [
+      ["To prove myself and earn respect from others", 3],
+      ["To achieve a sense of accomplishment and personal growth", 8],
+      ["To gain power or control over my own destiny", 13],
+      ["To avoid boredom and bring excitement into my life", 18]
+    ]
+  ],
+  [
+    "What do you value most in a close relationship, such as a romantic partnership or strong friendship?",
+    [
+      ["The thrill of adventure and shared excitement", 4],
+      ["Deep emotional connection and vulnerability", 5],
+      ["Mutual trust and loyalty, with an emphasis on reliability", 6],
+      ["A sense of comfort and stability, where you can be yourself", 7]
+    ]
+  ],
+  ["Phoenix", []],
+  ["Elf", []],
+  ["Centaur", []],
+  ["Elf", []],
+  [
+    "What do you value most in a close relationship, such as a romantic partnership or strong friendship?",
+    [
+      ["The thrill of adventure and shared excitement", 9],
+      ["Deep emotional connection and vulnerability", 10],
+      ["Mutual trust and loyalty, with an emphasis on reliability", 11],
+      ["A sense of comfort and stability, where you can be yourself", 12]
+    ]
+  ],
+  ["Phoenix", []],
+  ["Elf", []],
+  ["Elf", []],
+  ["Fairy", []],
+  [
+    "What do you value most in a close relationship, such as a romantic partnership or strong friendship?",
+    [
+      ["The thrill of adventure and shared excitement", 14],
+      ["Deep emotional connection and vulnerability", 15],
+      ["Mutual trust and loyalty, with an emphasis on reliability", 16],
+      ["A sense of comfort and stability, where you can be yourself", 17]
+    ]
+  ],
+  ["Dragon", []],
+  ["Phoenix", []],
+  ["Centaur", []],
+  ["Elf", []],
+  [
+    "When you're in a situation where you have to navigate between multiple conflicting demands or priorities, how do you typically handle it?",
+    [
+      [
+        "I prioritize the most important one and try to find ways to make the others work around it",
+        19
+      ],
+      [
+        "I try to find common ground among all of them and look for a compromise that satisfies everyone",
+        20
+      ],
+      [
+        "I get overwhelmed by the choices and might even freeze up or procrastinate",
+        21
+      ],
+      [
+        "I trust my instincts and go with the option that feels right, even if it's not the most logical choice",
+        22
+      ]
+    ]
+  ],
+  ["Elf", []],
+  ["Fairy", []],
+  ["Fairy", []],
+  ["Fairy", []],
+  [
+    "When dealing with conflict or disagreements, what role do you typically play?",
+    [
+      ["I try to mediate and find a peaceful resolution", 24],
+      ["I take a strong stance and fight for what I believe is right", 29],
+      ["I tend to avoid confrontation and focus on finding common ground", 34],
+      [
+        "I get passionate about my perspective and can come across as stubborn",
+        39
+      ]
+    ]
+  ],
+  [
+    "When exploring a mysterious, ancient ruin, what draws you in the most?",
+    [
+      ["The promise of uncovering hidden secrets and treasures", 25],
+      ["The thrill of navigating treacherous traps and puzzles", 26],
+      ["A sense of connection to the land and its history", 27],
+      ["A desire to claim the ruin's power and resources for yourself", 28]
+    ]
+  ],
+  ["Centaur", []],
+  ["Gnome", []],
+  ["Elf", []],
+  ["Phoenix", []],
+  [
+    "When exploring a mysterious, ancient ruin, what draws you in the most?",
+    [
+      ["The promise of uncovering hidden secrets and treasures", 30],
+      ["The thrill of navigating treacherous traps and puzzles", 31],
+      ["A sense of connection to the land and its history", 32],
+      ["A desire to claim the ruin's power and resources for yourself", 33]
+    ]
+  ],
+  ["Phoenix", []],
+  ["Dragon", []],
+  ["Phoenix", []],
+  ["Dragon", []],
+  [
+    "What kind of impact do you want to have in your world?",
+    [
+      ["I want to be a leader, shaping the destiny of others", 35],
+      [
+        "I prefer to work behind the scenes, making subtle changes that add up over time",
+        36
+      ],
+      [
+        "I'm happy to just make a splash and cause some excitement, even if it's chaotic",
+        37
+      ],
+      [
+        "I'd rather just keep to myself, enjoying my own quiet accomplishments",
+        38
+      ]
+    ]
+  ],
+  ["Centaur", []],
+  ["Fairy", []],
+  ["Fairy", []],
+  ["Gnome", []],
+  [
+    "How do you approach a situation where someone else is being unfairly treated or taken advantage of?",
+    [
+      ["I would stand up for them and speak out against the injustice", 40],
+      ["I would try to reason with both parties and find a compromise", 41],
+      ["I would mind my own business, as it's not my problem", 42],
+      [
+        "I would use my wit and cunning to subtly manipulate the situation in their favor",
+        43
+      ]
+    ]
+  ],
+  ["Elf", []],
+  ["Elf", []],
+  ["Fairy", []],
+  ["Fairy", []],
+  [
+    "What drives you most in life? Is it...",
+    [
+      ["The desire for recognition and praise", 45],
+      ["A sense of duty and responsibility towards others", 50],
+      ["The pursuit of personal freedom and independence", 55],
+      [
+        "The thrill of exploring new horizons and discovering hidden secrets",
+        60
+      ]
+    ]
+  ],
+  [
+    "In a world where magic is a real force, do you believe that power should be wielded by those who understand its true nature and can use it responsibly?",
+    [
+      ["Only by those who have mastered its complexities", 46],
+      ["By anyone who shows potential, regardless of their understanding", 47],
+      ["Not at all; magic should be feared and avoided", 48],
+      [
+        "It's not about responsibility, but rather the thrill of wielding it",
+        49
+      ]
+    ]
+  ],
+  ["Phoenix", []],
+  ["Phoenix", []],
+  ["Dragon", []],
+  ["Dragon", []],
+  [
+    "In a world where magic is real, how would you typically approach using your own magical abilities?",
+    [
+      ["I'd use them to help those in need and protect the innocent", 51],
+      ["I'd focus on mastering my powers for personal gain or recognition", 52],
+      [
+        "I'd try to keep my abilities hidden, fearing others might misuse them",
+        53
+      ],
+      [
+        "I'd seek out a mentor or guide to teach me how to wield my magic wisely",
+        54
+      ]
+    ]
+  ],
+  ["Elf", []],
+  ["Centaur", []],
+  ["Elf", []],
+  ["Centaur", []],
+  [
+    "When interacting with people, do you often feel like you're trying to bring out the best in them, or would you rather focus on your own goals and pursuits?",
+    [
+      ["I try to inspire others and help them grow", 56],
+      [
+        "I prioritize my own objectives and don't worry about what others think",
+        57
+      ],
+      [
+        "I'm willing to adapt and find a balance between helping others and achieving my own aims",
+        58
+      ],
+      [
+        "I tend to keep to myself and not get too involved in other people's business",
+        59
+      ]
+    ]
+  ],
+  ["Fairy", []],
+  ["Phoenix", []],
+  ["Centaur", []],
+  ["Centaur", []],
+  [
+    "When interacting with people, do you often feel like you're trying to bring out the best in them, or would you rather focus on your own goals and pursuits?",
+    [
+      ["I try to inspire others and help them grow", 61],
+      [
+        "I prioritize my own objectives and don't worry about what others think",
+        62
+      ],
+      [
+        "I'm willing to adapt and find a balance between helping others and achieving my own aims",
+        63
+      ],
+      [
+        "I tend to keep to myself and not get too involved in other people's business",
+        64
+      ]
+    ]
+  ],
+  ["Elf", []],
+  ["Phoenix", []],
+  ["Phoenix", []],
+  ["Elf", []],
+  [
+    "What drives you most in life? Is it...",
+    [
+      ["The desire for recognition and praise", 66],
+      ["A sense of duty and responsibility towards others", 71],
+      ["The pursuit of personal freedom and independence", 76],
+      [
+        "The thrill of exploring new horizons and discovering hidden secrets",
+        81
+      ]
+    ]
+  ],
+  [
+    "When dealing with a complex problem or puzzle, do you typically approach it by...",
+    [
+      ["Breaking it down into smaller, more manageable parts", 67],
+      ["Seeking out guidance from others who have experience in this area", 68],
+      [
+        "Using your creativity and imagination to find innovative solutions",
+        69
+      ],
+      [
+        "Charging forward without hesitation, using brute force to overcome any obstacles",
+        70
+      ]
+    ]
+  ],
+  ["Elf", []],
+  ["Elf", []],
+  ["Fairy", []],
+  ["Dragon", []],
+  [
+    "When dealing with a complex problem or puzzle, do you typically approach it by...",
+    [
+      ["Breaking it down into smaller, more manageable parts", 72],
+      ["Seeking out guidance from others who have experience in this area", 73],
+      [
+        "Using your creativity and imagination to find innovative solutions",
+        74
+      ],
+      [
+        "Charging forward without hesitation, using brute force to overcome any obstacles",
+        75
+      ]
+    ]
+  ],
+  ["Centaur", []],
+  ["Centaur", []],
+  ["Phoenix", []],
+  ["Dwarf", []],
+  [
+    "When faced with a seemingly insurmountable obstacle or challenge, how do you typically approach overcoming it?",
+    [
+      ["I take my time to think through all possible solutions", 77],
+      ["I dive headfirst into action and figure out the details as I go", 78],
+      [
+        "I seek out guidance and advice from others who have experience in this area",
+        79
+      ],
+      [
+        "I try to find a way around or manipulate the situation to avoid the obstacle altogether",
+        80
+      ]
+    ]
+  ],
+  ["Centaur", []],
+  ["Phoenix", []],
+  ["Centaur", []],
+  ["Phoenix", []],
+  [
+    "When dealing with a complex problem or puzzle, do you typically approach it by...",
+    [
+      ["Breaking it down into smaller, more manageable parts", 82],
+      ["Seeking out guidance from others who have experience in this area", 83],
+      [
+        "Using your creativity and imagination to find innovative solutions",
+        84
+      ],
+      [
+        "Charging forward without hesitation, using brute force to overcome any obstacles",
+        85
+      ]
+    ]
+  ],
+  ["Phoenix", []],
+  ["Phoenix", []],
+  ["Phoenix", []],
+  ["Dragon", []],
+  [
+    "When faced with a difficult choice between personal gain and doing what's morally right, what would you typically choose?",
+    [
+      ["Follow my own self-interest", 87],
+      [
+        "Stand up for what I believe in, even if it means personal sacrifice",
+        108
+      ],
+      ["Try to find a middle ground that satisfies both desires", 123],
+      ["Do whatever is most likely to avoid conflict or trouble", 144]
+    ]
+  ],
+  [
+    "When exploring a mysterious and ancient ruin, what do you usually feel most drawn to?",
+    [
+      ["The secrets hidden within ancient texts and artifacts", 88],
+      ["The thrill of uncovering hidden treasures and lost knowledge", 93],
+      ["A sense of unease or foreboding that something is watching you", 98],
+      [
+        "An overwhelming urge to clear the area and make it safe for others",
+        103
+      ]
+    ]
+  ],
+  [
+    "When facing a group of strangers in a hostile or uncertain environment, how do you typically approach them?",
+    [
+      [
+        "I would try to gather more information about them before making any moves",
+        89
+      ],
+      [
+        "I would strike up a conversation and try to build connections with them",
+        90
+      ],
+      [
+        "I would prepare for combat and be ready to defend myself if necessary",
+        91
+      ],
+      [
+        "I would use my surroundings to my advantage and look for ways to manipulate the situation",
+        92
+      ]
+    ]
+  ],
+  ["Centaur", []],
+  ["Centaur", []],
+  ["Gnome", []],
+  ["Goblin", []],
+  [
+    "When facing a group of strangers in a hostile or uncertain environment, how do you typically approach them?",
+    [
+      [
+        "I would try to gather more information about them before making any moves",
+        94
+      ],
+      [
+        "I would strike up a conversation and try to build connections with them",
+        95
+      ],
+      [
+        "I would prepare for combat and be ready to defend myself if necessary",
+        96
+      ],
+      [
+        "I would use my surroundings to my advantage and look for ways to manipulate the situation",
+        97
+      ]
+    ]
+  ],
+  ["Centaur", []],
+  ["Gnome", []],
+  ["Centaur", []],
+  ["Dragon", []],
+  [
+    "How would you describe your typical attitude towards rules and authority?",
+    [
+      ["I believe in respecting authority and following the rules", 99],
+      [
+        "I think rules can be useful, but I'm not afraid to bend or break them when necessary",
+        100
+      ],
+      [
+        "Rules are meant to be broken, and I take great pleasure in pushing boundaries",
+        101
+      ],
+      ["Rules don't apply to me; I make my own way", 102]
+    ]
+  ],
+  ["Centaur", []],
+  ["Goblin", []],
+  ["Orc", []],
+  ["Orc", []],
+  [
+    "What do you think is the most important thing in a relationship or friendship?",
+    [
+      ["The ability to rely on each other in times of need", 104],
+      ["Mutual understanding and shared goals", 105],
+      ["Open communication and honesty", 106],
+      ["A sense of stability and routine", 107]
+    ]
+  ],
+  ["Gnome", []],
+  ["Gnome", []],
+  ["Centaur", []],
+  ["Centaur", []],
+  [
+    "When exploring a mysterious and ancient ruin, what do you usually feel most drawn to?",
+    [
+      ["The secrets hidden within ancient texts and artifacts", 109],
+      ["The thrill of uncovering hidden treasures and lost knowledge", 114],
+      ["A sense of unease or foreboding that something is watching you", 117],
+      [
+        "An overwhelming urge to clear the area and make it safe for others",
+        120
+      ]
+    ]
+  ],
+  [
+    "When facing a group of people who don't share your views or values, how do you typically handle the situation?",
+    [
+      ["Try to reason with them and find common ground", 110],
+      ["Stand firm in my own beliefs, even if it means disagreeing", 111],
+      [
+        "Avoid confrontation altogether and focus on finding a peaceful resolution",
+        112
+      ],
+      ["Get frustrated and feel like they're 'wrong'", 113]
+    ]
+  ],
+  ["Centaur", []],
+  ["Elf", []],
+  ["Nymph", []],
+  ["Gnome", []],
+  [
+    "In a world where magic exists, would you rather be known for your mastery of a specific magical discipline or your ability to think creatively and find innovative solutions to complex problems?",
+    [
+      ["Mastering a specific magical discipline", 115],
+      ["Finding innovative solutions to complex problems", 116]
+    ]
+  ],
+  ["Centaur", []],
+  ["Centaur", []],
+  [
+    "In a world where magic exists, would you rather be known for your mastery of a specific magical discipline or your ability to think creatively and find innovative solutions to complex problems?",
+    [
+      ["Mastering a specific magical discipline", 118],
+      ["Finding innovative solutions to complex problems", 119]
+    ]
+  ],
+  ["Elf", []],
+  ["Elf", []],
+  [
+    "In a world where magic exists, would you rather be known for your mastery of a specific magical discipline or your ability to think creatively and find innovative solutions to complex problems?",
+    [
+      ["Mastering a specific magical discipline", 121],
+      ["Finding innovative solutions to complex problems", 122]
+    ]
+  ],
+  ["Elf", []],
+  ["Centaur", []],
+  [
+    "When exploring a mysterious and ancient ruin, what do you tend to prioritize most?",
+    [
+      ["Searching for hidden treasures or artifacts", 124],
+      ["Studying the structure's architecture and history", 129],
+      ["Trying to uncover any dark secrets or curses that may be lurking", 134],
+      [
+        "Feeling out the energy and atmosphere of the place, seeing if it resonates with you",
+        139
+      ]
+    ]
+  ],
+  [
+    "In a world where magic is real, how would you typically approach using it?",
+    [
+      [
+        "With great caution and deliberation, only using it when absolutely necessary",
+        125
+      ],
+      [
+        "With enthusiasm and creativity, often experimenting with new spells and techniques",
+        126
+      ],
+      ["As a tool for personal gain or power", 127],
+      [
+        "Not at all, preferring to rely on physical skills and abilities instead",
+        128
+      ]
+    ]
+  ],
+  ["Centaur", []],
+  ["Elf", []],
+  ["Goblin", []],
+  ["Centaur", []],
+  [
+    "In a world where magic is real, how would you typically approach using it?",
+    [
+      [
+        "With great caution and deliberation, only using it when absolutely necessary",
+        130
+      ],
+      [
+        "With enthusiasm and creativity, often experimenting with new spells and techniques",
+        131
+      ],
+      ["As a tool for personal gain or power", 132],
+      [
+        "Not at all, preferring to rely on physical skills and abilities instead",
+        133
+      ]
+    ]
+  ],
+  ["Elf", []],
+  ["Elf", []],
+  ["Gnome", []],
+  ["Centaur", []],
+  [
+    "What do you think is the most important quality for a leader to possess?",
+    [
+      ["Strength and courage in battle", 135],
+      ["Wisdom and strategic thinking", 136],
+      ["Charisma and ability to inspire others", 137],
+      ["Justness and fairness in all dealings", 138]
+    ]
+  ],
+  ["Dragon", []],
+  ["Centaur", []],
+  ["Centaur", []],
+  ["Centaur", []],
+  [
+    "In a world where magic is real, how would you typically approach using it?",
+    [
+      [
+        "With great caution and deliberation, only using it when absolutely necessary",
+        140
+      ],
+      [
+        "With enthusiasm and creativity, often experimenting with new spells and techniques",
+        141
+      ],
+      ["As a tool for personal gain or power", 142],
+      [
+        "Not at all, preferring to rely on physical skills and abilities instead",
+        143
+      ]
+    ]
+  ],
+  ["Centaur", []],
+  ["Elf", []],
+  ["Dragon", []],
+  ["Centaur", []],
+  [
+    "When exploring a mysterious and ancient ruin, what do you usually feel most drawn to?",
+    [
+      ["The secrets hidden within ancient texts and artifacts", 145],
+      ["The thrill of uncovering hidden treasures and lost knowledge", 150],
+      ["A sense of unease or foreboding that something is watching you", 155],
+      [
+        "An overwhelming urge to clear the area and make it safe for others",
+        160
+      ]
+    ]
+  ],
+  [
+    "In the face of adversity, how do you typically respond?",
+    [
+      ["I try to find a way to outsmart or outmaneuver the challenge", 146],
+      [
+        "I take a step back and assess the situation before deciding on a course of action",
+        147
+      ],
+      ["I rely on my intuition and trust that it will guide me through", 148],
+      ["I let my emotions take over and act impulsively", 149]
+    ]
+  ],
+  ["Elf", []],
+  ["Centaur", []],
+  ["Centaur", []],
+  ["Phoenix", []],
+  [
+    "In the face of adversity, how do you typically respond?",
+    [
+      ["I try to find a way to outsmart or outmaneuver the challenge", 151],
+      [
+        "I take a step back and assess the situation before deciding on a course of action",
+        152
+      ],
+      ["I rely on my intuition and trust that it will guide me through", 153],
+      ["I let my emotions take over and act impulsively", 154]
+    ]
+  ],
+  ["Elf", []],
+  ["Centaur", []],
+  ["Phoenix", []],
+  ["Goblin", []],
+  [
+    "In the face of adversity, how do you typically respond?",
+    [
+      ["I try to find a way to outsmart or outmaneuver the challenge", 156],
+      [
+        "I take a step back and assess the situation before deciding on a course of action",
+        157
+      ],
+      ["I rely on my intuition and trust that it will guide me through", 158],
+      ["I let my emotions take over and act impulsively", 159]
+    ]
+  ],
+  ["Elf", []],
+  ["Centaur", []],
+  ["Gnome", []],
+  ["Werewolf", []],
+  [
+    "When dealing with a group of people who don't share your goals or values, what do you usually try to do?",
+    [
+      ["Try to find common ground and negotiate a compromise", 161],
+      [
+        "Stand firm in your own views and persuade others to see things your way",
+        162
+      ],
+      [
+        "Avoid confrontation altogether and look for ways to separate yourself from the group",
+        163
+      ],
+      [
+        "Use humor or wit to diffuse tension and shift the focus away from disagreements",
+        164
+      ]
+    ]
+  ],
+  ["Centaur", []],
+  ["Centaur", []],
+  ["Dwarf", []],
+  ["Centaur", []],
+  [
+    "When faced with a difficult moral dilemma, what would you rather be remembered for: being strong and getting things done, or taking the high road even if it's harder?",
+    [
+      ["being strong and getting things done", 166],
+      ["taking the high road even if it's harder", 187],
+      ["avoiding conflict altogether", 208],
+      ["doing whatever feels most authentic to me", 229]
+    ]
+  ],
+  [
+    "When exploring a mysterious ancient ruin, what do you most hope to discover?",
+    [
+      ["A powerful magical artifact", 167],
+      ["Clues to unlock a hidden treasure", 172],
+      [
+        "Insights into the culture and history of the ancient civilization",
+        177
+      ],
+      ["A way to harness the ruins' magical energies for personal gain", 182]
+    ]
+  ],
+  [
+    "When facing a difficult challenge or obstacle, what is your initial instinct: to charge forward and tackle it head-on, or to take a step back and carefully consider all options?",
+    [
+      ["charge forward", 168],
+      ["take a step back", 169],
+      ["analyze from multiple angles", 170],
+      ["seek guidance from others", 171]
+    ]
+  ],
+  ["Centaur", []],
+  ["Gnome", []],
+  ["Centaur", []],
+  ["Centaur", []],
+  [
+    "In a fantasy world, how would you approach a situation where a powerful magical artifact has been stolen from the realm's ruler?",
+    [
+      ["I would take immediate action to retrieve it and restore order", 173],
+      [
+        "I would gather more information about the artifact's significance and potential consequences before acting",
+        174
+      ],
+      [
+        "I would try to negotiate with the thief to return the artifact peacefully",
+        175
+      ],
+      [
+        "I would use the situation as an opportunity to gain power and influence for myself",
+        176
+      ]
+    ]
+  ],
+  ["Dwarf", []],
+  ["Elf", []],
+  ["Gnome", []],
+  ["Dragon", []],
+  [
+    "In a fantasy world, how would you approach a situation where a powerful magical artifact has been stolen from the realm's ruler?",
+    [
+      ["I would take immediate action to retrieve it and restore order", 178],
+      [
+        "I would gather more information about the artifact's significance and potential consequences before acting",
+        179
+      ],
+      [
+        "I would try to negotiate with the thief to return the artifact peacefully",
+        180
+      ],
+      [
+        "I would use the situation as an opportunity to gain power and influence for myself",
+        181
+      ]
+    ]
+  ],
+  ["Centaur", []],
+  ["Elf", []],
+  ["Elf", []],
+  ["Dragon", []],
+  [
+    "In your ideal world, what would be the primary focus of your daily life?",
+    [
+      ["Pursuing knowledge and discovery", 183],
+      ["Building and creating things", 184],
+      ["Helping others and making a positive impact", 185],
+      ["Gathering wealth and material possessions", 186]
+    ]
+  ],
+  ["Centaur", []],
+  ["Dwarf", []],
+  ["Elf", []],
+  ["Dragon", []],
+  [
+    "When exploring a mysterious ancient ruin, what do you most hope to discover?",
+    [
+      ["A powerful magical artifact", 188],
+      ["Clues to unlock a hidden treasure", 193],
+      [
+        "Insights into the culture and history of the ancient civilization",
+        198
+      ],
+      ["A way to harness the ruins' magical energies for personal gain", 203]
+    ]
+  ],
+  [
+    "How do you handle situations where your values and principles conflict with the expectations of those around you?",
+    [
+      [
+        "I prioritize my own moral compass and stand firm even if it means going against the crowd",
+        189
+      ],
+      [
+        "I try to find a compromise that satisfies both sides, even if it's not perfect",
+        190
+      ],
+      [
+        "I consider the perspectives of others and adjust my approach accordingly, while still staying true to myself",
+        191
+      ],
+      [
+        "I tend to avoid conflict altogether and seek alternative solutions or retreat from the situation",
+        192
+      ]
+    ]
+  ],
+  ["Elf", []],
+  ["Centaur", []],
+  ["Elf", []],
+  ["Fairy", []],
+  [
+    "How do you handle situations where your values and principles conflict with the expectations of those around you?",
+    [
+      [
+        "I prioritize my own moral compass and stand firm even if it means going against the crowd",
+        194
+      ],
+      [
+        "I try to find a compromise that satisfies both sides, even if it's not perfect",
+        195
+      ],
+      [
+        "I consider the perspectives of others and adjust my approach accordingly, while still staying true to myself",
+        196
+      ],
+      [
+        "I tend to avoid conflict altogether and seek alternative solutions or retreat from the situation",
+        197
+      ]
+    ]
+  ],
+  ["Elf", []],
+  ["Elf", []],
+  ["Gnome", []],
+  ["Elf", []],
+  [
+    "In a fantasy world where magic is a real force, how do you think it should be used?",
+    [
+      ["To help those in need and bring people together", 199],
+      ["To achieve personal power and influence others", 200],
+      [
+        "To explore the mysteries of the universe and uncover hidden secrets",
+        201
+      ],
+      ["To protect oneself from harm or danger", 202]
+    ]
+  ],
+  ["Elf", []],
+  ["Fairy", []],
+  ["Elf", []],
+  ["Nymph", []],
+  [
+    "In your daily life, how much control do you like to have over your surroundings?",
+    [
+      [
+        "I thrive in situations where I can shape every aspect of my environment",
+        204
+      ],
+      ["I prefer a balance between structure and flexibility", 205],
+      [
+        "I'm content with things being somewhat unpredictable as long as I'm prepared for anything",
+        206
+      ],
+      [
+        "I don't really care about having control, as long as I'm happy and fulfilled",
+        207
+      ]
+    ]
+  ],
+  ["Phoenix", []],
+  ["Elf", []],
+  ["Elf", []],
+  ["Elf", []],
+  [
+    "When exploring a mysterious ancient ruin, what do you most hope to discover?",
+    [
+      ["A powerful magical artifact", 209],
+      ["Clues to unlock a hidden treasure", 214],
+      [
+        "Insights into the culture and history of the ancient civilization",
+        219
+      ],
+      ["A way to harness the ruins' magical energies for personal gain", 224]
+    ]
+  ],
+  [
+    "What drives you more: the thrill of the unknown or the satisfaction of achieving a long-term goal?",
+    [
+      ["The excitement of exploring uncharted territories", 210],
+      [
+        "The sense of accomplishment that comes with completing a difficult task",
+        211
+      ],
+      ["The desire to uncover hidden secrets and mysteries", 212],
+      ["The need to protect loved ones and community", 213]
+    ]
+  ],
+  ["Elf", []],
+  ["Centaur", []],
+  ["Elf", []],
+  ["Elf", []],
+  [
+    "What drives you more: the thrill of the unknown or the satisfaction of achieving a long-term goal?",
+    [
+      ["The excitement of exploring uncharted territories", 215],
+      [
+        "The sense of accomplishment that comes with completing a difficult task",
+        216
+      ],
+      ["The desire to uncover hidden secrets and mysteries", 217],
+      ["The need to protect loved ones and community", 218]
+    ]
+  ],
+  ["Elf", []],
+  ["Elf", []],
+  ["Elf", []],
+  ["Elf", []],
+  [
+    "What do you value more in life: personal freedom to make your own choices or a sense of belonging within a community?",
+    [
+      ["The freedom to chart my own course", 220],
+      ["Being part of a close-knit group where I feel safe and supported", 221],
+      [
+        "Having the power to shape the world around me, even if it means sacrificing some independence",
+        222
+      ],
+      ["Having others rely on me for their well-being and protection", 223]
+    ]
+  ],
+  ["Elf", []],
+  ["Fairy", []],
+  ["Elf", []],
+  ["Centaur", []],
+  [
+    "When faced with an unexpected setback or failure, how do you usually respond?",
+    [
+      ["I try to find a way to learn from it and move forward", 225],
+      ["I get frustrated and may lash out at others", 226],
+      ["I seek support and guidance from those around me", 227],
+      [
+        "I take the opportunity to plot my revenge and prepare for future confrontation",
+        228
+      ]
+    ]
+  ],
+  ["Elf", []],
+  ["Gnome", []],
+  ["Gnome", []],
+  ["Elf", []],
+  [
+    "When exploring a mysterious ancient ruin, what do you most hope to discover?",
+    [
+      ["A powerful magical artifact", 230],
+      ["Clues to unlock a hidden treasure", 235],
+      [
+        "Insights into the culture and history of the ancient civilization",
+        240
+      ],
+      ["A way to harness the ruins' magical energies for personal gain", 245]
+    ]
+  ],
+  [
+    "In a world where magic is a part of everyday life, how do you feel about using magic for personal gain or self-advancement?",
+    [
+      [
+        "I think it's perfectly fine to use magic to improve my own situation",
+        231
+      ],
+      [
+        "As long as I'm not harming anyone else, I don't see why magic can't be used for personal benefit",
+        232
+      ],
+      [
+        "Magic should only be used for the greater good, and I'd never use it for selfish reasons",
+        233
+      ],
+      [
+        "The idea of using magic for personal gain is unsettling and I wouldn't do it even if it was easy",
+        234
+      ]
+    ]
+  ],
+  ["Elf", []],
+  ["Elf", []],
+  ["Elf", []],
+  ["Fairy", []],
+  [
+    "When facing an overwhelming challenge or obstacle, how do you typically handle it?",
+    [
+      [
+        "I try to tackle it head-on and overcome it through sheer determination and effort",
+        236
+      ],
+      [
+        "I seek out others who may be able to help me find a solution or offer support",
+        237
+      ],
+      [
+        "I take time to reflect on the situation and think creatively about possible approaches",
+        238
+      ],
+      [
+        "I get frustrated and might lash out or give up, but eventually I'll try again once I've cooled down",
+        239
+      ]
+    ]
+  ],
+  ["Elf", []],
+  ["Elf", []],
+  ["Elf", []],
+  ["Centaur", []],
+  [
+    "When facing an overwhelming challenge or obstacle, how do you typically handle it?",
+    [
+      [
+        "I try to tackle it head-on and overcome it through sheer determination and effort",
+        241
+      ],
+      [
+        "I seek out others who may be able to help me find a solution or offer support",
+        242
+      ],
+      [
+        "I take time to reflect on the situation and think creatively about possible approaches",
+        243
+      ],
+      [
+        "I get frustrated and might lash out or give up, but eventually I'll try again once I've cooled down",
+        244
+      ]
+    ]
+  ],
+  ["Centaur", []],
+  ["Elf", []],
+  ["Elf", []],
+  ["Nymph", []],
+  [
+    "What drives your sense of accomplishment and fulfillment?",
+    [
+      ["The pursuit of power and prestige", 246],
+      ["Helping others and making a positive impact", 247],
+      ["Achieving personal growth and self-improvement", 248],
+      ["Collecting unique treasures and knowledge", 249]
+    ]
+  ],
+  ["Dragon", []],
+  ["Elf", []],
+  ["Elf", []],
+  ["Dragon", []],
+  [
+    "What drives you to take action when faced with a problem or challenge?",
+    [
+      ["The desire to protect others and ensure their safety", 251],
+      [
+        "Honor, loyalty, and a sense of duty to uphold principles and morals",
+        272
+      ],
+      [
+        "The need to prove oneself as strong and capable in the face of adversity",
+        293
+      ],
+      ["A deep-seated curiosity and urge to uncover hidden truths", 314]
+    ]
+  ],
+  [
+    "When exploring new places, what do you usually look for?",
+    [
+      ["A sense of adventure and mystery", 252],
+      ["Beautiful scenery and natural wonders", 257],
+      ["Useful resources and valuable treasures", 262],
+      ["Ancient history and cultural significance", 267]
+    ]
+  ],
+  [
+    "In your daily life, how do you approach conflicts or disagreements with others?",
+    [
+      ["I try to avoid them whenever possible", 253],
+      ["I stand my ground and assert my own perspective", 254],
+      ["I listen carefully to others and seek a compromise", 255],
+      ["I let my emotions get the better of me and may lash out", 256]
+    ]
+  ],
+  ["Elf", []],
+  ["Nymph", []],
+  ["Unicorn", []],
+  ["Minotaur", []],
+  [
+    "When facing a difficult moral dilemma, which path would you more likely choose?",
+    [
+      [
+        "Take the time to carefully weigh all options and seek guidance from others",
+        258
+      ],
+      [
+        "Follow your own moral compass and make a decision based on what feels right",
+        259
+      ],
+      ["Seek immediate action and take swift decisive measures", 260],
+      ["Try to avoid getting involved and let others handle it", 261]
+    ]
+  ],
+  ["Elf", []],
+  ["Unicorn", []],
+  ["Phoenix", []],
+  ["Unicorn", []],
+  [
+    "In situations where you're faced with a difficult choice between personal gain and doing what's right, what do you usually prioritize?",
+    [
+      [
+        "I always choose to do what's right, even if it means sacrificing my own interests",
+        263
+      ],
+      [
+        "I prioritize my own needs and well-being, but only if I can still justify the decision in my mind",
+        264
+      ],
+      [
+        "I look for ways to balance both options and find a compromise that benefits everyone",
+        265
+      ],
+      [
+        "I'm willing to take calculated risks to get ahead, as long as it doesn't harm anyone else",
+        266
+      ]
+    ]
+  ],
+  ["Phoenix", []],
+  ["Phoenix", []],
+  ["Phoenix", []],
+  ["Elf", []],
+  [
+    "When facing a difficult moral dilemma, which path would you more likely choose?",
+    [
+      [
+        "Take the time to carefully weigh all options and seek guidance from others",
+        268
+      ],
+      [
+        "Follow your own moral compass and make a decision based on what feels right",
+        269
+      ],
+      ["Seek immediate action and take swift decisive measures", 270],
+      ["Try to avoid getting involved and let others handle it", 271]
+    ]
+  ],
+  ["Nymph", []],
+  ["Phoenix", []],
+  ["Phoenix", []],
+  ["Nymph", []],
+  [
+    "When exploring new places, what do you usually look for?",
+    [
+      ["A sense of adventure and mystery", 273],
+      ["Beautiful scenery and natural wonders", 278],
+      ["Useful resources and valuable treasures", 283],
+      ["Ancient history and cultural significance", 288]
+    ]
+  ],
+  [
+    "When facing a difficult moral dilemma, what would you rather prioritize: personal gain or the greater good?",
+    [
+      ["Personal gain", 274],
+      ["The greater good", 275],
+      ["I'd find a way to make it work for both", 276],
+      ["It depends on the situation", 277]
+    ]
+  ],
+  ["Vampire", []],
+  ["Phoenix", []],
+  ["Phoenix", []],
+  ["Phoenix", []],
+  [
+    "What is your approach to dealing with conflicts or disputes?",
+    [
+      ["I try to mediate and find a peaceful resolution", 279],
+      [
+        "I stand firm in my principles and assert myself to ensure justice",
+        280
+      ],
+      ["I try to avoid confrontation whenever possible", 281],
+      [
+        "I see conflict as an opportunity to prove myself and assert dominance",
+        282
+      ]
+    ]
+  ],
+  ["Unicorn", []],
+  ["Unicorn", []],
+  ["Nymph", []],
+  ["Minotaur", []],
+  [
+    "When facing a difficult moral dilemma, what would you rather prioritize: personal gain or the greater good?",
+    [
+      ["Personal gain", 284],
+      ["The greater good", 285],
+      ["I'd find a way to make it work for both", 286],
+      ["It depends on the situation", 287]
+    ]
+  ],
+  ["Dwarf", []],
+  ["Elf", []],
+  ["Phoenix", []],
+  ["Dragon", []],
+  [
+    "When facing a difficult moral dilemma, what would you rather prioritize: personal gain or the greater good?",
+    [
+      ["Personal gain", 289],
+      ["The greater good", 290],
+      ["I'd find a way to make it work for both", 291],
+      ["It depends on the situation", 292]
+    ]
+  ],
+  ["Minotaur", []],
+  ["Phoenix", []],
+  ["Minotaur", []],
+  ["Nymph", []],
+  [
+    "When exploring new places, what do you usually look for?",
+    [
+      ["A sense of adventure and mystery", 294],
+      ["Beautiful scenery and natural wonders", 299],
+      ["Useful resources and valuable treasures", 304],
+      ["Ancient history and cultural significance", 309]
+    ]
+  ],
+  [
+    "When faced with a difficult moral dilemma, how do you typically approach making a decision?",
+    [
+      [
+        "You weigh the pros and cons, trying to find a solution that balances all involved",
+        295
+      ],
+      [
+        "You trust your instincts and go with what feels right, even if it's not the most rational choice",
+        296
+      ],
+      ["You seek guidance from a higher authority or someone you respect", 297],
+      [
+        "You try to avoid getting too caught up in emotions and make a decision based on logic alone",
+        298
+      ]
+    ]
+  ],
+  ["Centaur", []],
+  ["Phoenix", []],
+  ["Minotaur", []],
+  ["Phoenix", []],
+  [
+    "When dealing with complex situations or puzzles, how do you typically approach them?",
+    [
+      [
+        "I break them down into smaller, more manageable parts and work through each component systematically",
+        300
+      ],
+      [
+        "I try to see the big picture and look for patterns or connections that can help me understand the overall situation",
+        301
+      ],
+      [
+        "I rely on my instincts and intuition to guide my decision-making process",
+        302
+      ],
+      [
+        "I seek out guidance from others who may have more knowledge or experience in the area",
+        303
+      ]
+    ]
+  ],
+  ["Centaur", []],
+  ["Elf", []],
+  ["Unicorn", []],
+  ["Unicorn", []],
+  [
+    "When dealing with a difficult or complex problem, what is your approach?",
+    [
+      [
+        "I break it down into smaller, manageable parts to tackle one by one",
+        305
+      ],
+      [
+        "I try to find a creative solution that doesn't necessarily follow the rules",
+        306
+      ],
+      [
+        "I seek guidance and wisdom from others who are more knowledgeable or experienced",
+        307
+      ],
+      ["I rely on my own intuition and gut feeling to make decisions", 308]
+    ]
+  ],
+  ["Elf", []],
+  ["Dragon", []],
+  ["Dragon", []],
+  ["Elf", []],
+  [
+    "In a world filled with uncertainty and change, what is your approach to coping with the unknown?",
+    [
+      ["I trust my intuition and adapt to new situations", 310],
+      ["I seek guidance from experts or mentors", 311],
+      [
+        "I try to understand the underlying forces at play and make decisions accordingly",
+        312
+      ],
+      [
+        "I prepare for the worst-case scenario and rely on contingency plans",
+        313
+      ]
+    ]
+  ],
+  ["Phoenix", []],
+  ["Elf", []],
+  ["Phoenix", []],
+  ["Minotaur", []],
+  [
+    "When exploring new places, what do you usually look for?",
+    [
+      ["A sense of adventure and mystery", 315],
+      ["Beautiful scenery and natural wonders", 320],
+      ["Useful resources and valuable treasures", 325],
+      ["Ancient history and cultural significance", 330]
+    ]
+  ],
+  [
+    "When dealing with complex problems or puzzles, how do you typically approach solving them?",
+    [
+      ["With a logical and methodical approach", 316],
+      ["By using your intuition and trusting your gut instinct", 317],
+      ["By breaking down the problem into smaller, more manageable parts", 318],
+      ["By seeking the help of others who are knowledgeable in the area", 319]
+    ]
+  ],
+  ["Phoenix", []],
+  ["Phoenix", []],
+  ["Phoenix", []],
+  ["Phoenix", []],
+  [
+    "When dealing with complex problems or puzzles, how do you typically approach solving them?",
+    [
+      ["With a logical and methodical approach", 321],
+      ["By using your intuition and trusting your gut instinct", 322],
+      ["By breaking down the problem into smaller, more manageable parts", 323],
+      ["By seeking the help of others who are knowledgeable in the area", 324]
+    ]
+  ],
+  ["Phoenix", []],
+  ["Phoenix", []],
+  ["Elf", []],
+  ["Nymph", []],
+  [
+    "In a world where magic is real, how would you typically use your own magical abilities?",
+    [
+      [
+        "To protect and serve others, using my powers for the greater good",
+        326
+      ],
+      [
+        "To advance my own knowledge and understanding of the mystical arts",
+        327
+      ],
+      [
+        "To gain power and influence over others, using my abilities to shape the world to my will",
+        328
+      ],
+      [
+        "To keep a low profile and use my magic to subtly manipulate events from behind the scenes",
+        329
+      ]
+    ]
+  ],
+  ["Phoenix", []],
+  ["Phoenix", []],
+  ["Dragon", []],
+  ["Nymph", []],
+  [
+    "When faced with a difficult moral dilemma, how do you typically approach it?",
+    [
+      ["I seek guidance from trusted authorities or higher powers", 331],
+      [
+        "I weigh my options carefully and try to find a solution that satisfies multiple perspectives",
+        332
+      ],
+      [
+        "I prioritize what I believe is right and ignore potential consequences",
+        333
+      ],
+      [
+        "I delay making a decision until more information becomes available",
+        334
+      ]
+    ]
+  ],
+  ["Phoenix", []],
+  ["Phoenix", []],
+  ["Phoenix", []],
+  ["Phoenix", []]
+]
