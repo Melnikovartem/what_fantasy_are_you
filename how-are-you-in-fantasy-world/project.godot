@@ -23,6 +23,8 @@ questions="*res://Autoload/questions_engine.gd"
 
 window/size/viewport_width=360
 window/size/viewport_height=640
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
 
 [internationalization]
 

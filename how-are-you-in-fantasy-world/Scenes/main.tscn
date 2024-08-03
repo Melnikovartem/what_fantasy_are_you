@@ -1,19 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://ckstbbh44oca3"]
+[gd_scene load_steps=4 format=3 uid="uid://ckstbbh44oca3"]
 
 [ext_resource type="Script" path="res://Scenes/main.gd" id="1_c2eof"]
 [ext_resource type="Texture2D" uid="uid://5xgr34umid30" path="res://Backgrounds/main_Background.png" id="2_mqspa"]
+[ext_resource type="StyleBox" uid="uid://cu50l42xqsrwl" path="res://Styles/button_style.tres" id="3_n6o8d"]
 
-[node name="Control" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Control" type="Node"]
 script = ExtResource("1_c2eof")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -22,71 +16,117 @@ grow_vertical = 2
 texture = ExtResource("2_mqspa")
 expand_mode = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -195.0
+offset_right = 150.0
+offset_bottom = -109.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Question" type="Label" parent="CanvasLayer/HBoxContainer"]
+custom_minimum_size = Vector2(300, 76)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 2
+theme_override_constants/line_spacing = -2
+theme_override_font_sizes/font_size = 16
+text = "In a world where magic is a powerful force, what do you believe is the most important quality for a wielder of such power to possess?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -130.0
+offset_top = -70.0
+offset_right = 130.0
+offset_bottom = 235.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+
+[node name="Answer1" type="Button" parent="CanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(260, 65)
+layout_mode = 2
+theme_override_styles/normal = ExtResource("3_n6o8d")
+text_overrun_behavior = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/Answer1"]
+custom_minimum_size = Vector2(260, 0)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 35
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 35
-theme_override_constants/margin_bottom = 50
+text = "Wisdom to use their powers responsibly"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+[node name="Answer2" type="Button" parent="CanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(260, 65)
 layout_mode = 2
+theme_override_styles/normal = ExtResource("3_n6o8d")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+[node name="Label2" type="Label" parent="CanvasLayer/VBoxContainer/Answer2"]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Courage to take risks and face challenges"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Answer3" type="Button" parent="CanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(260, 65)
 layout_mode = 2
+theme_override_styles/normal = ExtResource("3_n6o8d")
 
-[node name="question" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="Label3" type="Label" parent="CanvasLayer/VBoxContainer/Answer3"]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Creativity to innovate and adapt"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Answer4" type="Button" parent="CanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(260, 65)
 layout_mode = 2
-size_flags_horizontal = 0
-text = "Question"
+theme_override_styles/normal = ExtResource("3_n6o8d")
 
-[node name="Control" type="Control" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 8
-text = "1"
-
-[node name="Get questions" type="Button" parent="."]
-layout_mode = 0
-offset_left = 296.0
-offset_top = 169.0
-offset_right = 414.0
-offset_bottom = 219.0
-text = "Get questions"
-
-[node name="AN1" type="Button" parent="."]
-layout_mode = 0
-offset_left = 62.0
-offset_top = 249.0
-offset_right = 242.0
-offset_bottom = 272.0
-
-[node name="AN2" type="Button" parent="."]
-layout_mode = 0
-offset_left = 62.0
-offset_top = 169.0
-offset_right = 242.0
-offset_bottom = 192.0
-
-[node name="AN3" type="Button" parent="."]
-layout_mode = 0
-offset_left = 62.0
-offset_top = 376.0
-offset_right = 242.0
-offset_bottom = 399.0
-
-[node name="AN4" type="Button" parent="."]
-layout_mode = 0
-offset_left = 62.0
-offset_top = 470.0
-offset_right = 242.0
-offset_bottom = 493.0
-
-[connection signal="pressed" from="Get questions" to="." method="update_state"]
+[node name="Label4" type="Label" parent="CanvasLayer/VBoxContainer/Answer4"]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Strength to dominate and control"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2

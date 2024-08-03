@@ -1,26 +1,29 @@
-extends Control
+extends Node
 
-var q1 = "QUES_1"
-var q2 = "QUES_2"
+@onready var question = $CanvasLayer/HBoxContainer/Question
+@onready var answers = $CanvasLayer/VBoxContainer.get_children().map(func(button): return button.get_child(0)) as Array[Label]
 
-var question_info = ""
-func next_question(prev_question, player_answer):
-	return ["What do you like?", ["apple", "ice cream", "brocolli!","blood"]]
-	
 
-func update_state():
-	question_info = next_question("", "")
-	print(question_info[0])
-	$MarginContainer/VBoxContainer/HBoxContainer/question.text = str(question_info[0])
-	$AN1.text = str(question_info[1][0])
-	$AN2.text = str(question_info[1][1])
-	$AN3.text = str(question_info[1][2])
-	$AN4.text = str(question_info[1][3])
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	print(answers)
+	for answer in answers:
+		answer.get_parent().connect("pressed", Callable(self, "_on_answer_question_pressed").bind(answer))
+	update_state(questions.next_question(""))
 
-	
+func _on_answer_question_pressed(answer):
+	update_state(questions.next_question(answer.text))
+
+func update_state(question_info):
+	question.text = question_info[0]
+	if not len(question_info[1]):
+		question_info[1].append("New game")
+		
+	for i in range(len(answers)):
+		var text := ""
+		if len(question_info[1]) > i:
+			text = question_info[1][i]
+		answers[i].text = text
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
