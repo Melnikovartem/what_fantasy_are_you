@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://ckstbbh44oca3"]
+[gd_scene load_steps=7 format=3 uid="uid://ckstbbh44oca3"]
 
 [ext_resource type="Script" path="res://Scenes/main.gd" id="1_c2eof"]
 [ext_resource type="Texture2D" uid="uid://5xgr34umid30" path="res://Assets/Backgrounds/main_Background.png" id="2_mqspa"]
 [ext_resource type="StyleBox" uid="uid://cu50l42xqsrwl" path="res://Styles/button_style.tres" id="3_n6o8d"]
+[ext_resource type="Texture2D" uid="uid://cra523kd44hhq" path="res://Assets/icons/volume-1 1.png" id="4_m5nmh"]
+[ext_resource type="Texture2D" uid="uid://3t8v5jwrubkw" path="res://Assets/icons/ru_lang_icon.png" id="5_hqdp6"]
+[ext_resource type="AudioStream" uid="uid://cydjpr0p14rny" path="res://Assets/icons/the-wayward-hearts-how-come-that-blood.mp3" id="6_ma155"]
 
 [node name="Control" type="Node"]
 script = ExtResource("1_c2eof")
@@ -130,3 +133,24 @@ text = "Strength to dominate and control"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
+
+[node name="VolumeButton" type="Button" parent="."]
+offset_left = 310.0
+offset_top = 16.0
+offset_right = 342.0
+offset_bottom = 52.0
+icon = ExtResource("4_m5nmh")
+
+[node name="LangButton" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+icon = ExtResource("5_hqdp6")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_ma155")
+volume_db = -15.0
+autoplay = true
+bus = &"Music"
+
+[connection signal="pressed" from="VolumeButton" to="." method="change_volume"]
+[connection signal="pressed" from="LangButton" to="." method="change_lang"]

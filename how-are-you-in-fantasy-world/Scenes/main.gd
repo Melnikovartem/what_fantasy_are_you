@@ -37,3 +37,19 @@ func update_state(question_info):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+	
+func change_volume():
+	if $VolumeButton.icon == preload("res://Assets/icons/volume-1 1.png"):
+		$VolumeButton.icon = preload("res://Assets/icons/volume-x 1.png")
+		$MusicPlayer.stop()
+	else:
+		$VolumeButton.icon = preload("res://Assets/icons/volume-1 1.png")
+		$MusicPlayer.play()
+		
+func change_lang():
+	if $LangButton.icon == preload("res://Assets/icons/ru_lang_icon.png"):
+		$LangButton.icon = preload("res://Assets/icons/en_lang_icon.png")
+		TranslationServer.set_locale("en")
+	else:
+		$LangButton.icon = preload("res://Assets/icons/ru_lang_icon.png")
+		TranslationServer.set_locale("ru")
