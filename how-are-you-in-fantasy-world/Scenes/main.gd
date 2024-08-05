@@ -5,7 +5,6 @@ extends Node
 
 
 func _ready():
-	print(answers)
 	for answer in answers:
 		answer.get_parent().connect("pressed", Callable(self, "_on_answer_question_pressed").bind(answer))
 	update_state(questions.next_question(""))
@@ -14,9 +13,19 @@ func _on_answer_question_pressed(answer):
 	update_state(questions.next_question(answer.text))
 
 func update_state(question_info):
-	question.text = question_info[0]
+	var ch_name = question_info[0]
+	question.text = ch_name
 	if not len(question_info[1]):
 		question_info[1].append("New game")
+		var dir = DirAccess.open("res://Assets/Backgrounds/")
+		if dir:
+			dir.list_dir_begin()
+			var file_name = dir.get_next()
+			while file_name != "":
+				if file_name.substr(0, len(ch_name)) == ch_name:
+					break
+				file_name = dir.get_next()
+			dir.list_dir_end()
 		
 	for i in range(len(answers)):
 		var text := ""
