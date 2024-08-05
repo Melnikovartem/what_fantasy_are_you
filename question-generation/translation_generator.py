@@ -1,7 +1,7 @@
 import csv
 import json
 
-QUESTIONS_FILE = "locked_generations/questions_depth_3.json"
+QUESTIONS_FILE = "locked_generations/questions_depth_7.json"
 QUESTIONS_TRANSLATION_FILE = "translation/questions_encoded.json"
 TRANSLATION_FILE = "translation/translation.csv"
 
@@ -11,6 +11,7 @@ with open(QUESTIONS_FILE, "r") as json_file:
 
 
 text_ids = {}
+pairs_of_encoded = []
 id_counter = {
     "Q": 0,
     "AN": 0,
@@ -18,9 +19,31 @@ id_counter = {
 }
 
 
+swap_mapping = {
+    "Paladin": "Centaur",
+    "Wizard": "Lich",
+    "Healer (Unicorn)": "Unicorn",
+    "Shapeshifter": "Boggart",
+    "Shapeshifter/Boggart": "Boggart",
+    "Ork": "Orc",
+    "Orion": "Sphinx",
+    "Sage Orc": "Fairy",
+}
+
+
 def encode(text, prefix):
+    if text in text_ids:
+        return
     encoded = f"{prefix}_{id_counter[prefix]}"
+    if text in swap_mapping:
+        mapped_text = swap_mapping[text]
+        encode(mapped_text, prefix)
+        text_ids[text] = text_ids[mapped_text]
+        print(f"replace {text} -> {mapped_text}")
+        return
+
     text_ids[text] = encoded
+    pairs_of_encoded.append((text, encoded))
     id_counter[prefix] += 1
 
 
@@ -73,5 +96,5 @@ with open(TRANSLATION_FILE, "w", newline="") as csv_file:
 
     writer.writerow(["key", "en"])
 
-    for text_field, encoded in sorted(text_ids.items(), key=sort_key_encode):
+    for text_field, encoded in sorted(pairs_of_encoded, key=sort_key_encode):
         writer.writerow([encoded, text_field])
