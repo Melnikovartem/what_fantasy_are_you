@@ -65,6 +65,7 @@ theme_override_constants/separation = 50
 [node name="Answer1" type="Button" parent="CanvasLayer/VBoxContainer"]
 custom_minimum_size = Vector2(2.08165e-12, 200)
 layout_mode = 2
+focus_mode = 0
 theme_override_styles/normal = ExtResource("3_n6o8d")
 text_overrun_behavior = 2
 
@@ -87,6 +88,7 @@ autowrap_mode = 2
 [node name="Answer2" type="Button" parent="CanvasLayer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
+focus_mode = 0
 theme_override_styles/normal = ExtResource("3_n6o8d")
 
 [node name="Label2" type="Label" parent="CanvasLayer/VBoxContainer/Answer2"]
@@ -106,6 +108,7 @@ autowrap_mode = 2
 [node name="Answer3" type="Button" parent="CanvasLayer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
+focus_mode = 0
 theme_override_styles/normal = ExtResource("3_n6o8d")
 
 [node name="Label3" type="Label" parent="CanvasLayer/VBoxContainer/Answer3"]
@@ -126,6 +129,7 @@ autowrap_mode = 2
 [node name="Answer4" type="Button" parent="CanvasLayer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
+focus_mode = 0
 theme_override_styles/normal = ExtResource("3_n6o8d")
 
 [node name="Label4" type="Label" parent="CanvasLayer/VBoxContainer/Answer4"]
@@ -153,15 +157,17 @@ offset_top = 50.0
 offset_right = -50.0
 offset_bottom = 250.0
 grow_horizontal = 0
+focus_mode = 0
 theme_override_styles/normal = ExtResource("4_lp8uo")
 icon = ExtResource("4_m5nmh")
 icon_alignment = 1
 
 [node name="LangButton" type="Button" parent="."]
-offset_left = 48.0
+offset_left = 46.0
 offset_top = 46.0
-offset_right = 248.0
+offset_right = 246.0
 offset_bottom = 246.0
+focus_mode = 0
 theme_override_styles/normal = ExtResource("4_lp8uo")
 icon = ExtResource("5_hqdp6")
 icon_alignment = 1

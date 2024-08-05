@@ -3,8 +3,8 @@ import json
 import random
 
 QUESTIONS_FILE = "locked_generations/questions_depth_7.json"
-QUESTIONS_TRANSLATION_FILE = "translation/questions_encoded.json"
-TRANSLATION_FILE = "translation/translation.csv"
+QUESTIONS_TRANSLATION_FILE = "translation/questions_encoded"
+TRANSLATION_FILE = "translation/questions_translation.csv"
 
 
 with open(QUESTIONS_FILE, "r") as json_file:
@@ -53,11 +53,11 @@ all_strings = {
     "AN": [],
     "CH": [],
 }
-for i, question in enumerate(data):
-    prefix = "CH" if len(question[1]) == 0 else "Q"
-    all_strings[prefix].append(question[0])
+for i, question_info in enumerate(data):
+    prefix = "CH" if len(question_info[1]) == 0 else "Q"
+    all_strings[prefix].append(question_info[0])
 
-    for j, answer in enumerate(question[1]):
+    for j, answer in enumerate(question_info[1]):
         prefix = "AN"
         all_strings[prefix].append(answer[0])
 
@@ -66,16 +66,19 @@ for key in all_strings:
     for text in all_strings[key]:
         encode(text, key)
 
-for i, question in enumerate(data):
-    data[i][0] = text_ids[question[0]]
+for i, question_info in enumerate(data):
+    data[i][0] = text_ids[question_info[0]]
     store_in_dict = {}
-    for j, answer in enumerate(question[1]):
+    for j, answer in enumerate(question_info[1]):
         store_in_dict[text_ids[answer[0]]] = answer[1]
     data[i][1] = store_in_dict
 
 
-with open(QUESTIONS_TRANSLATION_FILE, "w") as new_json_file:
-    json.dump(data, new_json_file)
+with open(QUESTIONS_TRANSLATION_FILE, "w") as questions_file:
+    rows = []
+    for question_info in data:
+        rows.append(json.dumps(question_info))
+    questions_file.write("\n".join(rows))
 
 
 def sort_key_encode(text_and_ecoded):
