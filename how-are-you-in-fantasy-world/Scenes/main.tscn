@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://ckstbbh44oca3"]
+[gd_scene load_steps=8 format=3 uid="uid://ckstbbh44oca3"]
 
 [ext_resource type="Script" path="res://Scenes/main.gd" id="1_c2eof"]
 [ext_resource type="Texture2D" uid="uid://5xgr34umid30" path="res://Assets/Backgrounds/main_Background.png" id="2_mqspa"]
-[ext_resource type="StyleBox" path="res://Styles/button_top_settings_style.tres" id="4_lp8uo"]
+[ext_resource type="StyleBox" uid="uid://cu50l42xqsrwl" path="res://Styles/button_answer_style.tres" id="3_n6o8d"]
+[ext_resource type="StyleBox" uid="uid://dlxwtamg1mp1" path="res://Styles/button_top_settings_style.tres" id="4_lp8uo"]
 [ext_resource type="Texture2D" uid="uid://cra523kd44hhq" path="res://Assets/icons/volume-1 1.png" id="4_m5nmh"]
 [ext_resource type="Texture2D" uid="uid://3t8v5jwrubkw" path="res://Assets/icons/ru_lang_icon.png" id="5_hqdp6"]
 [ext_resource type="AudioStream" uid="uid://cydjpr0p14rny" path="res://Assets/icons/the-wayward-hearts-how-come-that-blood.mp3" id="6_ma155"]
@@ -65,6 +66,7 @@ theme_override_constants/separation = 50
 custom_minimum_size = Vector2(2.08165e-12, 200)
 layout_mode = 2
 focus_mode = 0
+theme_override_styles/normal = ExtResource("3_n6o8d")
 text_overrun_behavior = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/Answer1"]
@@ -87,6 +89,7 @@ autowrap_mode = 2
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 focus_mode = 0
+theme_override_styles/normal = ExtResource("3_n6o8d")
 
 [node name="Label2" type="Label" parent="CanvasLayer/VBoxContainer/Answer2"]
 layout_mode = 1
@@ -96,7 +99,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/line_spacing = -15
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 60
 text = "Rebel"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -106,6 +109,7 @@ autowrap_mode = 2
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 focus_mode = 0
+theme_override_styles/normal = ExtResource("3_n6o8d")
 
 [node name="Label3" type="Label" parent="CanvasLayer/VBoxContainer/Answer3"]
 layout_mode = 1
@@ -126,6 +130,7 @@ autowrap_mode = 2
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 focus_mode = 0
+theme_override_styles/normal = ExtResource("3_n6o8d")
 
 [node name="Label4" type="Label" parent="CanvasLayer/VBoxContainer/Answer4"]
 layout_mode = 1
