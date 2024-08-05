@@ -18,7 +18,7 @@ except ollama._types.ResponseError:
 
 all_questions_answers = []
 count_bottom_nodes = {}
-max_depth = 3
+max_depth = 7
 duplicate_question_probabilty = 0.5
 # model gives 3 to 4 answer options
 total_questions = sum(4**depth for depth in range(max_depth + 1))
@@ -54,6 +54,8 @@ def dfs(previous_question_answers, parent_question_id=None):
             count_bottom_nodes[character] = 0
         count_bottom_nodes[character] += 1
 
+        if len(all_questions_answers) % 200 == 0:
+            save_questions_to_file(all_questions_answers)
         pbar.update(1)
         return question_id
 
@@ -61,6 +63,7 @@ def dfs(previous_question_answers, parent_question_id=None):
         parent_question_id
         and random.random() < duplicate_question_probabilty
         and len(all_questions_answers[parent_question_id][1])
+        and questions_left > 1
     )
 
     result_from_model = None
@@ -82,6 +85,8 @@ def dfs(previous_question_answers, parent_question_id=None):
         result_from_model = get_answer_from_model(prompt, pattern)
 
     all_questions_answers.append((result_from_model["question"], []))
+    if len(all_questions_answers) % 200 == 0:
+        save_questions_to_file(all_questions_answers)
     pbar.update(1)
 
     for option_answer in result_from_model["options"]:

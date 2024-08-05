@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://ckstbbh44oca3"]
+[gd_scene load_steps=8 format=3 uid="uid://ckstbbh44oca3"]
 
 [ext_resource type="Script" path="res://Scenes/main.gd" id="1_c2eof"]
 [ext_resource type="Texture2D" uid="uid://5xgr34umid30" path="res://Assets/Backgrounds/main_Background.png" id="2_mqspa"]
-[ext_resource type="StyleBox" uid="uid://cu50l42xqsrwl" path="res://Styles/button_style.tres" id="3_n6o8d"]
+[ext_resource type="StyleBox" uid="uid://cu50l42xqsrwl" path="res://Styles/button_answer_style.tres" id="3_n6o8d"]
+[ext_resource type="StyleBox" uid="uid://dlxwtamg1mp1" path="res://Styles/button_top_settings_style.tres" id="4_lp8uo"]
 [ext_resource type="Texture2D" uid="uid://cra523kd44hhq" path="res://Assets/icons/volume-1 1.png" id="4_m5nmh"]
 [ext_resource type="Texture2D" uid="uid://3t8v5jwrubkw" path="res://Assets/icons/ru_lang_icon.png" id="5_hqdp6"]
 [ext_resource type="AudioStream" uid="uid://cydjpr0p14rny" path="res://Assets/icons/the-wayward-hearts-how-come-that-blood.mp3" id="6_ma155"]
@@ -27,24 +28,24 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -150.0
-offset_top = -195.0
-offset_right = 150.0
-offset_bottom = -109.0
+offset_left = -497.0
+offset_top = -860.0
+offset_right = 493.0
+offset_bottom = -156.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Question" type="Label" parent="CanvasLayer/HBoxContainer"]
-custom_minimum_size = Vector2(300, 76)
+custom_minimum_size = Vector2(990, 500)
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 5
+theme_override_constants/outline_size = 18
 theme_override_constants/shadow_outline_size = 2
-theme_override_constants/line_spacing = -2
-theme_override_font_sizes/font_size = 16
-text = "In a world where magic is a powerful force, what do you believe is the most important quality for a wielder of such power to possess?"
+theme_override_constants/line_spacing = -14
+theme_override_font_sizes/font_size = 60
+text = "When navigating through a mysterious and ancient ruin, you come across a powerful artifact that holds the key to unlocking great knowledge or power. However, you sense that the artifact is guarded by a powerful entity that demands a significant sacrifice in exchange for its use. What do you do?"
 horizontal_alignment = 1
-vertical_alignment = 1
+vertical_alignment = 2
 autowrap_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
@@ -53,98 +54,123 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -130.0
-offset_top = -70.0
-offset_right = 130.0
-offset_bottom = 235.0
+offset_left = -452.0
+offset_top = -121.0
+offset_right = 423.0
+offset_bottom = 829.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 15
+theme_override_constants/separation = 50
 
 [node name="Answer1" type="Button" parent="CanvasLayer/VBoxContainer"]
-custom_minimum_size = Vector2(260, 65)
+custom_minimum_size = Vector2(2.08165e-12, 200)
 layout_mode = 2
+focus_mode = 0
 theme_override_styles/normal = ExtResource("3_n6o8d")
 text_overrun_behavior = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/Answer1"]
-custom_minimum_size = Vector2(260, 0)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -7.0
+offset_bottom = 8.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Wisdom to use their powers responsibly"
+theme_override_constants/line_spacing = -15
+theme_override_font_sizes/font_size = 40
+text = "It would depend on how you're isolating - if it's for a good reason, you might be okay with it, but if it's just because you can't handle others' opinions, that would be a different story"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="Answer2" type="Button" parent="CanvasLayer/VBoxContainer"]
-custom_minimum_size = Vector2(260, 65)
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
+focus_mode = 0
 theme_override_styles/normal = ExtResource("3_n6o8d")
 
 [node name="Label2" type="Label" parent="CanvasLayer/VBoxContainer/Answer2"]
-custom_minimum_size = Vector2(260, 0)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Courage to take risks and face challenges"
+theme_override_constants/line_spacing = -15
+theme_override_font_sizes/font_size = 50
+text = "Rebel"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="Answer3" type="Button" parent="CanvasLayer/VBoxContainer"]
-custom_minimum_size = Vector2(260, 65)
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
+focus_mode = 0
 theme_override_styles/normal = ExtResource("3_n6o8d")
 
 [node name="Label3" type="Label" parent="CanvasLayer/VBoxContainer/Answer3"]
-custom_minimum_size = Vector2(260, 0)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Creativity to innovate and adapt"
+theme_override_constants/line_spacing = -15
+theme_override_font_sizes/font_size = 60
+text = "123 456 789 123 456 789 123 456 789 123 456 789 123 456 
+"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="Answer4" type="Button" parent="CanvasLayer/VBoxContainer"]
-custom_minimum_size = Vector2(260, 65)
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
+focus_mode = 0
 theme_override_styles/normal = ExtResource("3_n6o8d")
 
 [node name="Label4" type="Label" parent="CanvasLayer/VBoxContainer/Answer4"]
-custom_minimum_size = Vector2(260, 0)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Strength to dominate and control"
+pivot_offset = Vector2(96, 2.08165e-12)
+theme_override_constants/line_spacing = -15
+theme_override_font_sizes/font_size = 50
+text = "123 456 789 123 456 789 123 456 789 123 456 789 123 456 789 123 456 789 123 456 789 123 456 789 "
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="VolumeButton" type="Button" parent="."]
-offset_left = 310.0
-offset_top = 16.0
-offset_right = 342.0
-offset_bottom = 52.0
+custom_minimum_size = Vector2(200, 200)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -250.0
+offset_top = 50.0
+offset_right = -50.0
+offset_bottom = 250.0
+grow_horizontal = 0
+focus_mode = 0
+theme_override_styles/normal = ExtResource("4_lp8uo")
 icon = ExtResource("4_m5nmh")
+icon_alignment = 1
 
 [node name="LangButton" type="Button" parent="."]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 46.0
+offset_top = 46.0
+offset_right = 246.0
+offset_bottom = 246.0
+focus_mode = 0
+theme_override_styles/normal = ExtResource("4_lp8uo")
 icon = ExtResource("5_hqdp6")
+icon_alignment = 1
 
 [node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_ma155")
