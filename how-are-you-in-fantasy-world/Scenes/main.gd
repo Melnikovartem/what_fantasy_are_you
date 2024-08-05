@@ -25,13 +25,13 @@ func update_state(question_info):
 	
 	if not len(question_info[1]):
 		question_info[1].append("Seek your people again")
-		var dir = DirAccess.open("res://Assets/Backgrounds/")
+		var dir = DirAccess.open("res://Assets/BackgroundsNew/")
 		if dir:
 			dir.list_dir_begin()
 			var file_name = dir.get_next()
 			while file_name != "":
-				if file_name.substr(0, len(text)) == text:
-					break
+				if file_name.substr(0, len(text)) == text and file_name.substr(len(file_name)-4, len(file_name)) == ".png":
+					$TextureRect.texture = load("res://Assets/BackgroundsNew/"+file_name)
 				file_name = dir.get_next()
 			dir.list_dir_end()
 		
