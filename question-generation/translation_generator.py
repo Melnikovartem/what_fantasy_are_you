@@ -1,5 +1,6 @@
 import csv
 import json
+import random
 
 QUESTIONS_FILE = "locked_generations/questions_depth_7.json"
 QUESTIONS_TRANSLATION_FILE = "translation/questions_encoded.json"
@@ -98,3 +99,17 @@ with open(TRANSLATION_FILE, "w", newline="") as csv_file:
 
     for text_field, encoded in sorted(pairs_of_encoded, key=sort_key_encode):
         writer.writerow([encoded, text_field])
+
+
+def aggregate_over(prefix, aggregate=max, **kwargs):
+    ffilter = filter(lambda x: x[1].split("_")[0] == prefix, pairs_of_encoded)
+    pair = aggregate(list(ffilter), **kwargs)
+    return f"{pair[1]}        {pair[0]}"
+
+
+print()
+print(f"Random question:\n{aggregate_over("Q", random.choice)}\n")
+print(f"Random answer:\n{aggregate_over("AN", random.choice)}\n")
+print(f"Longest question:\n{aggregate_over("Q", key=lambda x: len(x[0]))}\n")
+print(f"Longest answer:\n{aggregate_over("AN", key=lambda x: len(x[0]))}\n")
+print(f"Shortest answer:\n{aggregate_over("AN", min, key=lambda x: len(x[0]))}\n")

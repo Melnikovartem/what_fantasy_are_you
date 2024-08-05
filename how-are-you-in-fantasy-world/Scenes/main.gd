@@ -32,6 +32,15 @@ func update_state(question_info):
 		if len(question_info[1]) > i:
 			text = question_info[1][i]
 		answers[i].text = text
+		
+		var font_size = 40
+		var translated_text = tr(text)
+		
+		if len(translated_text) < 55:
+			font_size = 60
+		elif len(translated_text) < 95:
+			font_size = 50
+		answers[i].set("theme_override_font_sizes/font_size", font_size)
 		answers[i].get_parent().visible = text != ""
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
