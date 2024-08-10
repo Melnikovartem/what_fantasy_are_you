@@ -5,9 +5,6 @@ import pandas as pd
 from googletrans import Translator
 from tqdm import tqdm, trange
 
-auth_key = os.environ.get("DEEPL_KEY", "")  # Replace with your key
-translator_deepl = deepl.Translator(auth_key)
-
 # Initialize the translator
 translator_google = Translator()
 
@@ -24,18 +21,35 @@ def translate_google(texts_en, language):
     return [translation.text for translation in translations]
 
 
+auth_keys = [
+    # os.environ.get("DEEPL_KEY", ""),
+    "91b8394f-2914-48ea-3bbc-165faf2dd648:fx",
+]
+
+
 def translate_deepl(texts_en, language):
-    translations = translator_deepl.translate_text(
-        texts_en, source_lang="EN", target_lang=language.upper(), formality="less"
-    )
-    return [translation.text for translation in translations]
+    while len(auth_keys):
+        try:
+            auth_key = auth_keys.pop()
+            translator_deepl = deepl.Translator(auth_key)
+            translations = translator_deepl.translate_text(
+                texts_en,
+                source_lang="EN",
+                target_lang=language.upper(),
+                formality="less",
+            )
+            return [translation.text for translation in translations]
+        except Exception as e:
+            print(e)
+            auth_keys.append(auth_key)
+    raise FileNotFoundError("no api keys")
 
 
 # Function to translate a DataFrame chunk
 def translate_chunk(chunk, language):
     translate_func = translate_google
     prefix = chunk["key"].iloc[0].split("_")[0]
-    if prefix == "Q" or prefix == "CH":
+    if prefix == "Q" or prefix == "CH" or prefix == "AN":
         translate_func = translate_deepl
     chunk_texts = chunk["en"].tolist()
     translated_texts = translate_func(chunk_texts, language)
