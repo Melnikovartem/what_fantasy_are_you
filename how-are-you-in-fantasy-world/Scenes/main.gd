@@ -60,10 +60,10 @@ func _process(delta):
 	
 func change_volume():
 	if $MusicPlayer.playing:
-		$VolumeButton.icon = preload("res://Assets/icons/volume-x 1.png")
+		$VolumeButton.icon = preload("res://Assets/icons/volume_x.png")
 		$MusicPlayer.stop()
 	else:
-		$VolumeButton.icon = preload("res://Assets/icons/volume-1 1.png")
+		$VolumeButton.icon = preload("res://Assets/icons/volume_1.png")
 		$MusicPlayer.play()
 		
 func change_lang():
