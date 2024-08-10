@@ -29,7 +29,7 @@ window/stretch/aspect="keep_width"
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://Assets/Translations/questions_translation.en.translation")
+locale/translations=PackedStringArray("res://Assets/Translations/questions_translation.en.translation", "res://Assets/Translations/questions_translation.ru.translation")
 
 [rendering]
 

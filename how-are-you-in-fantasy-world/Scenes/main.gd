@@ -31,7 +31,7 @@ func update_state(question_info):
 			var file_name = dir.get_next()
 			while file_name != "":
 				if file_name.substr(0, len(text) + 1) == text + "-" and file_name.substr(len(file_name)-4, len(file_name)) == ".png":
-					$BG_main.texture = load("res://Assets/BackgroundsNew/"+file_name)
+					%BG_main.texture = load("res://Assets/BackgroundsNew/"+file_name)
 				file_name = dir.get_next()
 			dir.list_dir_end()
 		
@@ -64,10 +64,10 @@ func _process(delta):
 	
 func change_volume():
 	if %MusicPlayer.playing:
-		%VolumeButton.icon = preload("res://Assets/icons/volume-x 1.png")
+		%VolumeButton.icon = preload("res://Assets/icons/volume_x.png")
 		%MusicPlayer.stop()
 	else:
-		%VolumeButton.icon = preload("res://Assets/icons/volume-1 1.png")
+		%VolumeButton.icon = preload("res://Assets/icons/volume_1.png")
 		%MusicPlayer.play()
 		
 func change_lang():

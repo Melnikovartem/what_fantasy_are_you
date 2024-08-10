@@ -1,24 +1,26 @@
 [gd_scene load_steps=8 format=3 uid="uid://ckstbbh44oca3"]
 
 [ext_resource type="Script" path="res://Scenes/main.gd" id="1_c2eof"]
-[ext_resource type="Texture2D" uid="uid://chld1u2whv3ef" path="res://Assets/BackgroundWide.png" id="2_h86th"]
 [ext_resource type="Texture2D" uid="uid://5xgr34umid30" path="res://Assets/Backgrounds/main_Background.png" id="2_mqspa"]
 [ext_resource type="StyleBox" uid="uid://cu50l42xqsrwl" path="res://Styles/button_answer_style.tres" id="3_n6o8d"]
 [ext_resource type="StyleBox" uid="uid://dlxwtamg1mp1" path="res://Styles/button_top_settings_style.tres" id="4_lp8uo"]
-[ext_resource type="Texture2D" uid="uid://cra523kd44hhq" path="res://Assets/icons/volume-1 1.png" id="4_m5nmh"]
-[ext_resource type="Texture2D" uid="uid://3t8v5jwrubkw" path="res://Assets/icons/ru_lang_icon.png" id="5_hqdp6"]
+[ext_resource type="Texture2D" uid="uid://daqajfe8p1c45" path="res://Assets/icons/volume_1.png" id="4_m5nmh"]
+[ext_resource type="Texture2D" uid="uid://cc2uroah663nr" path="res://Assets/icons/ru_lang_icon.png" id="5_hqdp6"]
 [ext_resource type="AudioStream" uid="uid://cydjpr0p14rny" path="res://Assets/icons/the-wayward-hearts-how-come-that-blood.mp3" id="6_ma155"]
 
 [node name="Control" type="Node"]
 script = ExtResource("1_c2eof")
 
-
 [node name="mainbackground" type="CanvasLayer" parent="."]
-[node name="BackgroundWide" type="Sprite2D" parent="mainbackground"]
-position = Vector2(246, 1098)
-texture = ExtResource("2_h86th")
+
+[node name="BG_big" type="ColorRect" parent="mainbackground"]
+offset_left = -4398.0
+offset_top = -702.0
+offset_right = 5367.0
+offset_bottom = 2687.0
 
 [node name="BG_main" type="TextureRect" parent="mainbackground"]
+unique_name_in_owner = true
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -181,34 +183,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-<<<<<<< HEAD
-=======
-[node name="VolumeButton" type="Button" parent="."]
-custom_minimum_size = Vector2(200, 200)
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -250.0
-offset_top = 50.0
-offset_right = -50.0
-offset_bottom = 250.0
-grow_horizontal = 0
-focus_mode = 0
-theme_override_styles/normal = ExtResource("4_lp8uo")
-icon = ExtResource("4_ju67p")
-icon_alignment = 1
-
-[node name="LangButton" type="Button" parent="."]
-offset_left = 46.0
-offset_top = 46.0
-offset_right = 246.0
-offset_bottom = 246.0
-focus_mode = 0
-theme_override_styles/normal = ExtResource("4_lp8uo")
-icon = ExtResource("5_hqdp6")
-icon_alignment = 1
-
->>>>>>> f01b857edd4f6fe26776e311ac8a922426d1e63e
 [node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = ExtResource("6_ma155")
