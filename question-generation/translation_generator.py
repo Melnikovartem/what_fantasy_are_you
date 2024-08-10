@@ -22,8 +22,7 @@ def translate_google(texts_en, language):
 
 
 auth_keys = [
-    # os.environ.get("DEEPL_KEY", ""),
-    "91b8394f-2914-48ea-3bbc-165faf2dd648:fx",
+    os.environ.get("DEEPL_KEY", ""),
 ]
 
 
@@ -38,10 +37,10 @@ def translate_deepl(texts_en, language):
                 target_lang=language.upper(),
                 formality="less",
             )
+            auth_keys.append(auth_key)
             return [translation.text for translation in translations]
         except Exception as e:
-            print(e)
-            auth_keys.append(auth_key)
+            print(auth_key[:8], ":", e)
     raise FileNotFoundError("no api keys")
 
 
@@ -84,7 +83,7 @@ else:
             df_translated[lang] = None
 
 # Process the DataFrame in batches
-chunk_size = 100
+chunk_size = 1000
 
 for lang in languages:
     for i in trange(start_idx, len(df), chunk_size, desc=f"Translating to {lang}"):
@@ -103,7 +102,7 @@ for lang in languages:
 
         # Save the cropped checkpoint
         checkpoint_df.to_csv(checkpoint_file, index=False)
-        print(f"Checkpoint {checkpoint_file} saved at line {i + chunk_size}")
+        # print(f"Checkpoint {checkpoint_file} saved at line {i + chunk_size}")
 
 # Save the translated DataFrame to a new CSV file
 output_file = "final_files/questions_translation.csv"
