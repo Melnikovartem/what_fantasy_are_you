@@ -30,7 +30,7 @@ func update_state(question_info):
 			dir.list_dir_begin()
 			var file_name = dir.get_next()
 			while file_name != "":
-				if file_name.substr(0, len(text)) == text and file_name.substr(len(file_name)-4, len(file_name)) == ".png":
+				if file_name.substr(0, len(text) + 1) == text + "-" and file_name.substr(len(file_name)-4, len(file_name)) == ".png":
 					$TextureRect.texture = load("res://Assets/BackgroundsNew/"+file_name)
 				file_name = dir.get_next()
 			dir.list_dir_end()
