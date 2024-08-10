@@ -1,118 +1,98 @@
-import csv
-import json
-import random
+import os
 
-QUESTIONS_FILE = "locked_generations/questions_depth_7.json"
-QUESTIONS_TRANSLATION_FILE = "translation/questions_encoded"
-TRANSLATION_FILE = "translation/questions_translation.csv"
+import deepl
+import pandas as pd
+from googletrans import Translator
+from tqdm import tqdm, trange
 
+auth_key = os.environ.get("DEEPL_KEY", "")  # Replace with your key
+translator_deepl = deepl.Translator(auth_key)
 
-with open(QUESTIONS_FILE, "r") as json_file:
-    data = json.load(json_file)
-
-
-text_ids = {}
-pairs_of_encoded = []
-id_counter = {
-    "Q": 0,
-    "AN": 0,
-    "CH": 0,
-}
+# Initialize the translator
+translator_google = Translator()
 
 
-swap_mapping = {
-    "Paladin": "Centaur",
-    "Wizard": "Lich",
-    "Healer (Unicorn)": "Unicorn",
-    "Shapeshifter": "Boggart",
-    "Shapeshifter/Boggart": "Boggart",
-    "Ork": "Orc",
-    "Orion": "Sphinx",
-    "Sage Orc": "Fairy",
-}
+# Abstract translation function for a list of texts
+def translate_google(texts_en, language):
+    translations = []
+    for text in tqdm(
+        texts_en, desc=f"Google processing chunk en->{language} {len(texts_en)} lines"
+    ):
+        translations.append(
+            translator_google.translate(text, src="en", dest=language.lower())
+        )
+    return [translation.text for translation in translations]
 
 
-def encode(text, prefix):
-    if text in text_ids:
-        return
-    encoded = f"{prefix}_{id_counter[prefix]}"
-    if text in swap_mapping:
-        mapped_text = swap_mapping[text]
-        encode(mapped_text, prefix)
-        text_ids[text] = text_ids[mapped_text]
-        print(f"replace {text} -> {mapped_text}")
-        return
-
-    text_ids[text] = encoded
-    pairs_of_encoded.append((text, encoded))
-    id_counter[prefix] += 1
+def translate_deepl(texts_en, language):
+    translations = translator_deepl.translate_text(
+        texts_en, source_lang="EN", target_lang=language.upper(), formality="less"
+    )
+    return [translation.text for translation in translations]
 
 
-all_strings = {
-    "Q": [],
-    "AN": [],
-    "CH": [],
-}
-for i, question_info in enumerate(data):
-    prefix = "CH" if len(question_info[1]) == 0 else "Q"
-    all_strings[prefix].append(question_info[0])
-
-    for j, answer in enumerate(question_info[1]):
-        prefix = "AN"
-        all_strings[prefix].append(answer[0])
-
-for key in all_strings:
-    all_strings[key] = sorted(all_strings[key])
-    for text in all_strings[key]:
-        encode(text, key)
-
-for i, question_info in enumerate(data):
-    data[i][0] = text_ids[question_info[0]]
-    store_in_dict = {}
-    for j, answer in enumerate(question_info[1]):
-        store_in_dict[text_ids[answer[0]]] = answer[1]
-    data[i][1] = store_in_dict
+# Function to translate a DataFrame chunk
+def translate_chunk(chunk, language):
+    translate_func = translate_google
+    prefix = chunk["key"].iloc[0].split("_")[0]
+    if prefix == "Q" or prefix == "CH":
+        translate_func = translate_deepl
+    chunk_texts = chunk["en"].tolist()
+    translated_texts = translate_func(chunk_texts, language)
+    chunk[language] = translated_texts
+    return chunk
 
 
-with open(QUESTIONS_TRANSLATION_FILE, "w") as questions_file:
-    rows = []
-    for question_info in data:
-        rows.append(json.dumps(question_info))
-    questions_file.write("\n".join(rows))
+# Load the CSV file
+file_name = "translation/questions_translation.csv"
+df = pd.read_csv(file_name)
 
+# List of languages to translate to
+languages = ["ru"]
+checkpoint_file = f'{file_name.split(".")[0]}_en_{"_".join(languages)}_checkpoint.csv'
 
-def sort_key_encode(text_and_ecoded):
-    encoded = text_and_ecoded[1].split("_")
+if os.path.exists(checkpoint_file):
+    # Load from checkpoint
+    df_translated = pd.read_csv(file_name)
+    checkpoint_df = pd.read_csv(checkpoint_file)
+    start_idx = len(checkpoint_df)
 
-    if encoded[0] == "CH":
-        ss = 0
-    elif encoded[0] == "Q":
-        ss = 10_000
-    elif encoded[0] == "AN":
-        ss = 100_000
-    else:
-        ss = 1_000_000
-    return ss + int(encoded[1])
+    df_translated = pd.concat(
+        [checkpoint_df, df_translated.iloc[start_idx:]], ignore_index=True
+    )
+    print(f"Resuming from checkpoint at line {start_idx}")
+else:
+    # Load the full original file
+    df_translated = pd.read_csv(file_name)
+    start_idx = 0
+    for lang in languages:
+        if lang not in df_translated.columns:
+            df_translated[lang] = None
 
+# Process the DataFrame in batches
+chunk_size = 100
 
-with open(TRANSLATION_FILE, "w", newline="") as csv_file:
-    writer = csv.writer(csv_file)
+for lang in languages:
+    for i in trange(start_idx, len(df), chunk_size, desc=f"Translating to {lang}"):
+        chunk = df_translated.iloc[
+            i : i + chunk_size
+        ].copy()  # Ensure we have a copy of the chunk
+        translated_chunk = translate_chunk(chunk, lang)
 
-    writer.writerow(["key", "en"])
+        # Update the main DataFrame with the translated chunk
+        df_translated.iloc[
+            i : i + chunk_size, df_translated.columns.get_loc(lang)
+        ] = translated_chunk[lang]
 
-    for text_field, encoded in sorted(pairs_of_encoded, key=sort_key_encode):
-        writer.writerow([encoded, text_field])
+        # Crop the DataFrame to the last fully translated line before saving the checkpoint
+        checkpoint_df = df_translated.iloc[: i + chunk_size]
 
+        # Save the cropped checkpoint
+        checkpoint_df.to_csv(checkpoint_file, index=False)
+        print(f"Checkpoint {checkpoint_file} saved at line {i + chunk_size}")
 
-def aggregate_over(prefix, aggregate=max, **kwargs):
-    ffilter = filter(lambda x: x[1].split("_")[0] == prefix, pairs_of_encoded)
-    pair = aggregate(list(ffilter), **kwargs)
-    return f"{pair[1]}        {pair[0]}"
+# Save the translated DataFrame to a new CSV file
+output_file = "final_files/questions_translation.csv"
+df_translated.to_csv(output_file, index=False)
 
-
-print()
-print(f"Random question:\n{aggregate_over("Q", random.choice)}\n")
-print(f"Random answer:\n{aggregate_over("AN", random.choice)}\n")
-print(f"Longest question:\n{aggregate_over("Q", key=lambda x: len(x[0]))}\n")
-print(f"Longest answer:\n{aggregate_over("AN", key=lambda x: len(x[0]))}\n")
-print(f"Shortest answer:\n{aggregate_over("AN", min, key=lambda x: len(x[0]))}\n")
+print(f"File saved as {output_file}")
