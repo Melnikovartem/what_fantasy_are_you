@@ -1,7 +1,7 @@
 extends Node
 
-@onready var question = $CanvasLayer/HBoxContainer/Question
-@onready var answers = $CanvasLayer/VBoxContainer.get_children().map(func(button): return button.get_child(0)) as Array[Label]
+@onready var question = $gameContent/HBoxContainer/Question
+@onready var answers = $gameContent/VBoxContainer.get_children().map(func(button): return button.get_child(0)) as Array[Label]
 
 
 func _ready():
@@ -31,7 +31,7 @@ func update_state(question_info):
 			var file_name = dir.get_next()
 			while file_name != "":
 				if file_name.substr(0, len(text) + 1) == text + "-" and file_name.substr(len(file_name)-4, len(file_name)) == ".png":
-					$TextureRect.texture = load("res://Assets/BackgroundsNew/"+file_name)
+					$BG_main.texture = load("res://Assets/BackgroundsNew/"+file_name)
 				file_name = dir.get_next()
 			dir.list_dir_end()
 		
@@ -54,17 +54,21 @@ func update_state(question_info):
 		answers[i].set("theme_override_font_sizes/font_size", font_size)
 		answers[i].get_parent().visible = text != ""
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+const max_width = 1242
+const max_height = 2208
 func _process(delta):
-	pass
+	var size = get_tree().root.size
+	var width = size[0]
+	var height = size[1]
+	
 	
 func change_volume():
-	if $MusicPlayer.playing:
-		$VolumeButton.icon = preload("res://Assets/icons/volume-x 1.png")
-		$MusicPlayer.stop()
+	if %MusicPlayer.playing:
+		%VolumeButton.icon = preload("res://Assets/icons/volume-x 1.png")
+		%MusicPlayer.stop()
 	else:
-		$VolumeButton.icon = preload("res://Assets/icons/volume-1 1.png")
-		$MusicPlayer.play()
+		%VolumeButton.icon = preload("res://Assets/icons/volume-1 1.png")
+		%MusicPlayer.play()
 		
 func change_lang():
 	if TranslationServer.get_locale() == "ru":
@@ -75,6 +79,6 @@ func change_lang():
 
 func change_locale_button(locale):
 	if locale == "en":
-		$LangButton.icon = preload("res://Assets/icons/en_lang_icon.png")
+		%LangButton.icon = preload("res://Assets/icons/en_lang_icon.png")
 	elif locale == "ru":
-		$LangButton.icon = preload("res://Assets/icons/ru_lang_icon.png")
+		%LangButton.icon = preload("res://Assets/icons/ru_lang_icon.png")

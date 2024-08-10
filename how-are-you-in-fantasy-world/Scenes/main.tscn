@@ -11,7 +11,15 @@
 [node name="Control" type="Node"]
 script = ExtResource("1_c2eof")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="mainbackground" type="CanvasLayer" parent="."]
+
+[node name="BG_big" type="ColorRect" parent="mainbackground"]
+offset_left = -4398.0
+offset_top = -702.0
+offset_right = 5367.0
+offset_bottom = 2687.0
+
+[node name="BG_main" type="TextureRect" parent="mainbackground"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -20,9 +28,36 @@ grow_vertical = 2
 texture = ExtResource("2_mqspa")
 expand_mode = 1
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="VolumeButton" type="Button" parent="mainbackground"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 200)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -250.0
+offset_top = 50.0
+offset_right = -50.0
+offset_bottom = 250.0
+grow_horizontal = 0
+focus_mode = 0
+theme_override_styles/normal = ExtResource("4_lp8uo")
+icon = ExtResource("4_m5nmh")
+icon_alignment = 1
 
-[node name="HBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+[node name="LangButton" type="Button" parent="mainbackground"]
+unique_name_in_owner = true
+offset_left = 46.0
+offset_top = 46.0
+offset_right = 246.0
+offset_bottom = 246.0
+focus_mode = 0
+theme_override_styles/normal = ExtResource("4_lp8uo")
+icon = ExtResource("5_hqdp6")
+icon_alignment = 1
+
+[node name="gameContent" type="CanvasLayer" parent="."]
+
+[node name="HBoxContainer" type="VBoxContainer" parent="gameContent"]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -35,20 +70,20 @@ offset_bottom = -156.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Question" type="Label" parent="CanvasLayer/HBoxContainer"]
+[node name="Question" type="Label" parent="gameContent/HBoxContainer"]
 custom_minimum_size = Vector2(990, 500)
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = -14
 theme_override_constants/outline_size = 18
 theme_override_constants/shadow_outline_size = 2
-theme_override_constants/line_spacing = -14
 theme_override_font_sizes/font_size = 60
 text = "When navigating through a mysterious and ancient ruin, you come across a powerful artifact that holds the key to unlocking great knowledge or power. However, you sense that the artifact is guarded by a powerful entity that demands a significant sacrifice in exchange for its use. What do you do?"
 horizontal_alignment = 1
 vertical_alignment = 2
 autowrap_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="gameContent"]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -62,14 +97,14 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 50
 
-[node name="Answer1" type="Button" parent="CanvasLayer/VBoxContainer"]
+[node name="Answer1" type="Button" parent="gameContent/VBoxContainer"]
 custom_minimum_size = Vector2(2.08165e-12, 200)
 layout_mode = 2
 focus_mode = 0
 theme_override_styles/normal = ExtResource("3_n6o8d")
 text_overrun_behavior = 2
 
-[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/Answer1"]
+[node name="Label" type="Label" parent="gameContent/VBoxContainer/Answer1"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -85,13 +120,13 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Answer2" type="Button" parent="CanvasLayer/VBoxContainer"]
+[node name="Answer2" type="Button" parent="gameContent/VBoxContainer"]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 focus_mode = 0
 theme_override_styles/normal = ExtResource("3_n6o8d")
 
-[node name="Label2" type="Label" parent="CanvasLayer/VBoxContainer/Answer2"]
+[node name="Label2" type="Label" parent="gameContent/VBoxContainer/Answer2"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -105,13 +140,13 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Answer3" type="Button" parent="CanvasLayer/VBoxContainer"]
+[node name="Answer3" type="Button" parent="gameContent/VBoxContainer"]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 focus_mode = 0
 theme_override_styles/normal = ExtResource("3_n6o8d")
 
-[node name="Label3" type="Label" parent="CanvasLayer/VBoxContainer/Answer3"]
+[node name="Label3" type="Label" parent="gameContent/VBoxContainer/Answer3"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -126,13 +161,13 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Answer4" type="Button" parent="CanvasLayer/VBoxContainer"]
+[node name="Answer4" type="Button" parent="gameContent/VBoxContainer"]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 focus_mode = 0
 theme_override_styles/normal = ExtResource("3_n6o8d")
 
-[node name="Label4" type="Label" parent="CanvasLayer/VBoxContainer/Answer4"]
+[node name="Label4" type="Label" parent="gameContent/VBoxContainer/Answer4"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -147,36 +182,12 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="VolumeButton" type="Button" parent="."]
-custom_minimum_size = Vector2(200, 200)
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -250.0
-offset_top = 50.0
-offset_right = -50.0
-offset_bottom = 250.0
-grow_horizontal = 0
-focus_mode = 0
-theme_override_styles/normal = ExtResource("4_lp8uo")
-icon = ExtResource("4_m5nmh")
-icon_alignment = 1
-
-[node name="LangButton" type="Button" parent="."]
-offset_left = 46.0
-offset_top = 46.0
-offset_right = 246.0
-offset_bottom = 246.0
-focus_mode = 0
-theme_override_styles/normal = ExtResource("4_lp8uo")
-icon = ExtResource("5_hqdp6")
-icon_alignment = 1
-
 [node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
 stream = ExtResource("6_ma155")
 volume_db = -15.0
 autoplay = true
 bus = &"Music"
 
-[connection signal="pressed" from="VolumeButton" to="." method="change_volume"]
-[connection signal="pressed" from="LangButton" to="." method="change_lang"]
+[connection signal="pressed" from="mainbackground/VolumeButton" to="." method="change_volume"]
+[connection signal="pressed" from="mainbackground/LangButton" to="." method="change_lang"]
