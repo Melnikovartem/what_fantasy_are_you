@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://ckstbbh44oca3"]
+[gd_scene load_steps=9 format=3 uid="uid://ckstbbh44oca3"]
 
 [ext_resource type="Script" path="res://Scenes/main.gd" id="1_c2eof"]
 [ext_resource type="Texture2D" uid="uid://5xgr34umid30" path="res://Assets/Backgrounds/main_Background.png" id="2_mqspa"]
+[ext_resource type="Texture2D" uid="uid://ceoo3g7sk1xwy" path="res://Assets/Backgrounds/BackgroundWide.png" id="2_rf8mn"]
 [ext_resource type="StyleBox" uid="uid://cu50l42xqsrwl" path="res://Styles/button_answer_style.tres" id="3_n6o8d"]
 [ext_resource type="StyleBox" uid="uid://dlxwtamg1mp1" path="res://Styles/button_top_settings_style.tres" id="4_lp8uo"]
 [ext_resource type="Texture2D" uid="uid://daqajfe8p1c45" path="res://Assets/icons/volume_1.png" id="4_m5nmh"]
@@ -13,11 +14,21 @@ script = ExtResource("1_c2eof")
 
 [node name="mainbackground" type="CanvasLayer" parent="."]
 
-[node name="BG_big" type="ColorRect" parent="mainbackground"]
-offset_left = -4398.0
-offset_top = -702.0
-offset_right = 5367.0
-offset_bottom = 2687.0
+[node name="BackgroundWide" type="TextureRect" parent="mainbackground"]
+unique_name_in_owner = true
+layout_direction = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1975.5
+offset_top = -1104.0
+offset_right = 1975.5
+offset_bottom = 1104.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_rf8mn")
 
 [node name="BG_main" type="TextureRect" parent="mainbackground"]
 unique_name_in_owner = true
@@ -57,6 +68,7 @@ icon = ExtResource("5_hqdp6")
 icon_alignment = 1
 
 [node name="gameContent" type="CanvasLayer" parent="."]
+transform = Transform2D(1, 1.04636e-15, -1.04636e-15, 1, 0, 0)
 
 [node name="HBoxContainer" type="VBoxContainer" parent="gameContent"]
 anchors_preset = 8

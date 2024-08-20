@@ -25,7 +25,7 @@ window/size/viewport_width=1242
 window/size/viewport_height=2208
 window/size/initial_position_type=0
 window/stretch/mode="viewport"
-window/stretch/aspect="keep_width"
+window/stretch/aspect="expand"
 
 [internationalization]
 
